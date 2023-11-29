@@ -1,0 +1,37 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    column-gap: 0.9375rem;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 1.5em;
+
+        font-size: 0.625rem;
+        font-weight: 700;
+        line-height: 1.8em;
+        color: var(--dark-color);
+
+        & a {
+            color: inherit;
+        }
+
+        &:not(:last-child) {
+            opacity: 0.5;
+        }
+
+        &:not(:first-child) {
+            &::before {
+                display: inline-block;
+
+                content: '';
+                background-image: url(/img/svg/arrow_forward.svg);
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                width: 0.7em;
+                height: 1.8em;
+            }
+        }
+    }
+}

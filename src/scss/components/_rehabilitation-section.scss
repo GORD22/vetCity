@@ -1,0 +1,188 @@
+.rehabilitation-section {
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 3.5rem;
+
+  padding-top: 0;
+  padding-bottom: 4rem;
+
+  background-color: var(--light-color);
+
+  @include tablet {
+    flex-direction: row;
+
+    justify-content: right;
+
+    border-radius: 2.1875em;
+    background-image: url(/img/rehabilitation-section-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 3.75rem;
+
+    padding-top: 5rem;
+    padding-right: 2.9375em;
+    padding-bottom: 5rem;
+  }
+
+  &__mob-preview-block {
+    margin-bottom: 4rem;
+
+    max-height: 40rem;
+
+    & img {
+      width: 100%;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &_therapy {
+    @include tablet {
+      background-image: url(/img/therapy_rehabilitation-section-bg.png);
+    }
+  }
+
+  &__content {
+    padding: 0 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.4rem;
+
+    background-color: var(--light-color);
+    max-width: 65.4rem;
+    width: 100%;
+
+    @include tablet {
+      gap: 1.5rem;
+
+      border-radius: 2.5rem;
+
+      max-width: 40.875em;
+      padding: 2.5rem;
+      padding-right: 7.5rem;
+    }
+
+    @include super-big-desktop {
+      max-width: 713px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+
+    max-width: 12.3611em;
+
+    color: var(--dark-color);
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.2308em;
+    letter-spacing: -0.0192em;
+
+    @include tablet {
+      font-size: 2.25rem;
+      line-height: 1.1111;
+    }
+  }
+
+  &__text {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 1.0714em;
+    }
+
+    color: var(--dark-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4286em;
+
+    @include tablet {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__price-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+
+    padding: 2rem 1.5rem;
+
+    border-radius: 2.5rem;
+    border: 1px solid #025bff;
+
+    @include tablet {
+      border-radius: 0;
+      border: none;
+      row-gap: 0;
+      padding: 0;
+
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__doc-block {
+    margin-bottom: 0;
+  }
+
+  &__doc-name {
+    font-weight: 700;
+  }
+
+  &__docs-icon {
+    max-width: 14.3125rem;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 229/64;
+  }
+
+  &__small-text {
+    margin: 0;
+    padding-left: 1.5714em;
+    max-width: 16.0714em;
+    opacity: 0.4;
+
+    color: var(--dark-color);
+    font-size: 0.875rem;
+  }
+
+  &__rec-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn-rec {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__form {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
+}
+
+.rehabilitation-section_therapy {
+  .rehabilitation-section__title {
+    max-width: unset;
+  }
+
+  .rehabilitation-section__text {
+    max-width: 30.25rem;
+  }
+}

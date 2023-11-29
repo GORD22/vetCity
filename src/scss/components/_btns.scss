@@ -1,0 +1,152 @@
+.btn-tr {
+    padding: 0.1667em;
+    border-radius: 3.75rem;
+    background: linear-gradient(45deg, #0273FF 0%, #013FFF 100%);
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    letter-spacing: 0.0167em;
+    color: var(--light-color);
+    text-transform: uppercase;
+
+    & span {
+        display: block;
+
+        width: 100%;
+        height: 100%;
+
+        border-radius: 3.75rem;
+
+        background-color: var(--dark-color);
+
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    @include hover {
+        & span {
+            background: linear-gradient(45deg, #0273FF 0%, #013FFF 100%);
+        }
+    }
+}
+
+.btn-thumb {
+    position: relative;
+    z-index: 10;
+
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 50%;
+    background: linear-gradient(124deg, #FAFAFA 0%, #D7DBE0 95.81%);
+
+    & svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 1.8rem;
+        height: 1.8rem;
+
+        fill: none;
+        stroke: var(--dark-color);
+        stroke-width: 1.5px;
+
+    }
+
+    @include tablet {
+        width: 3.125rem;
+        height: 3.125rem;
+
+        & svg {
+            width: 1.125rem;
+            height: 1.125rem;
+        }
+    }
+
+    @include hover {
+        background: linear-gradient(45deg, #0273FF 0%, #013FFF 100%);
+
+        & svg {
+            stroke: var(--light-color);
+        }
+    }
+}
+
+.btn-blue_new {
+    padding: 1.1667em 1.9167em;
+    border-radius: 3.75rem;
+    background: linear-gradient(45deg, #0273FF 0%, #013FFF 100%);
+    background-size: 110% 115%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid transparent;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    letter-spacing: 0.0167em;
+    color: var(--light-color);
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: 0.75rem;
+    }
+
+    @include hover {
+        background: transparent;
+        border: 2px solid #025bff;
+
+        color: #025bff;
+    }
+}
+
+.btn-light {
+    display: inline-block;
+    background: linear-gradient(124deg, #FAFAFA -30.52%, #D7DBE0 89.61%);
+    padding: 1.3333em 2.0833em;
+    border-radius: 3.75rem;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4em;
+    letter-spacing: 0.0167em;
+    color: var(--dark-color);
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: 0.75rem;
+    }
+
+    @include hover {
+        background: var(--dark-color);
+
+        color: var(--light-color);
+    }
+}
+
+.btn-disabled {
+    cursor: default;
+
+    background: #b4ccff;
+
+    @include hover {
+        border-color: #b4ccff;
+        background: #b4ccff;
+        color: var(--light-color);
+    }
+}
+
+.btn-disabled-rec {
+    cursor: default;
+
+    background: #4486f7;
+    color: #185bcd;
+
+    @include hover {
+        border-color: #4486f7;
+        background: #4486f7;
+        color: #185bcd;
+    }
+}

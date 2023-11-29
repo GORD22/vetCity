@@ -1,0 +1,79 @@
+.therapy-check-up-card-small {
+  box-sizing: border-box;
+
+  max-width: 19.75rem;
+  height: auto;
+  aspect-ratio: 316/166;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+
+  border-radius: 2.5rem;
+  border: 1px solid #0273ff;
+
+  padding: 1.875rem;
+
+  @include super-big-desktop {
+    max-width: 347.5px;
+    aspect-ratio: 347.5/166;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
+    max-width: 7.1111em;
+
+    color: var(--dark-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.3333em;
+    letter-spacing: -0.0278em;
+  }
+
+  .card-diagnostics__detail {
+    display: inline-block;
+  }
+}
+
+.therapy-check-up-card-big {
+  box-sizing: border-box;
+
+  max-width: 19.75rem;
+  height: auto;
+  aspect-ratio: 316/354;
+
+  border-radius: 2.5rem;
+  border: 1px solid #0273ff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 1.875rem;
+
+  @include super-big-desktop {
+    max-width: 347.5px;
+    aspect-ratio: 347.5/354;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 1.2222em;
+    max-width: 13.2778em;
+
+    color: var(--dark-color);
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.3333em;
+    letter-spacing: -0.0278em;
+  }
+
+  .card-diagnostics__detail {
+    display: inline-block;
+  }
+}

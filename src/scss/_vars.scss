@@ -1,0 +1,28 @@
+:root {
+  --font-family: "Inter", sans-serif;
+  --font-family-sec: "Lexend", sans-serif;
+
+  --content-width-mobile: 510px;
+  --content-width-st: 690px;
+  --content-width-t: 930px;
+  --content-width-fd: 1164px;
+  --content-width-bd: 1330px;
+  --content-width-sbd: 1456px;
+
+  --container-offset-st: 2.5rem;
+  --container-offset-bd: 2.9375rem;
+
+  --container-width-mobile: calc(var(--content-width-mobile) + (var(--container-offset-st) * 2));
+  --container-width-st: calc(var(--content-width-st) + (var(--container-offset-st) * 2));
+  --container-width-t: calc(var(--content-width-t) + (var(--container-offset-bd) * 2));
+  --container-width-fd: calc(var(--content-width-fd) + (var(--container-offset-bd) * 2));
+  --container-width-bd: calc(var(--content-width-bd) + (var(--container-offset-bd) * 2));
+  --container-width-sbd: calc(var(--content-width-sbd) + (var(--container-offset-bd) * 2));
+
+
+  --light-color: #fff;
+  --black-color: #000;
+  --dark-color: #1b1b29;
+  --blue-color: #007bff;
+  --smoky-white-color: #f1f4f8;
+}

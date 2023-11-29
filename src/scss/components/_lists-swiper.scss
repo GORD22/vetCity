@@ -1,0 +1,320 @@
+.chemotherapy__list-swiper,
+.cryodestruction__list-swiper,
+.other__list-swiper {
+  width: 100%;
+  padding: 0 2.5rem;
+
+  @include tablet {
+    padding-right: 2.9375rem;
+    padding-left: 2.9375rem;
+  }
+
+  .swiper-wrapper {
+    align-items: start;
+    min-height: 0;
+
+    @include tablet {
+      align-items: unset;
+      flex-direction: column;
+    }
+  }
+}
+
+.chemotherapy {
+  &__item {
+    overflow: hidden;
+    box-sizing: border-box;
+
+    background-color: var(--smoky-white-color);
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    max-width: 31.5rem;
+    width: 100%;
+    height: auto;
+
+    border-radius: 2.5rem;
+
+    @include tablet {
+      align-items: center;
+      flex-direction: row;
+
+      max-width: unset;
+      width: auto;
+      padding: 2rem 2.8125rem;
+
+      border-radius: 0;
+
+      &:first-child {
+        border-top-right-radius: 2.5rem;
+        border-top-left-radius: 2.5rem;
+      }
+
+      &:last-child {
+        border-bottom-right-radius: 2.5rem;
+        border-bottom-left-radius: 2.5rem;
+      }
+
+      &:nth-child(2n) {
+        background-color: #E3E9F0;
+      }
+    }
+
+    &_small-pd {
+      @include tablet {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 1.0714em;
+
+    width: 100%;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.4286em;
+    color: #000;
+
+    @include tablet {
+      margin: 0;
+
+      width: auto;
+
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 1.3333em;
+    }
+  }
+
+  &__item-descr {
+    margin: 0;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4286em;
+    color: #000;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__item-price-block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablet {
+      width: auto;
+      display: block;
+    }
+  }
+
+  &__item-btn {
+    margin-right: 3.3em;
+
+    font-size: 1rem;
+    padding: 1.3em;
+
+    @include tablet {
+      margin-right: 3.3em;
+
+      font-size: 0.75rem;
+      padding: 1.25em 2.0833em;
+    }
+  }
+
+  &__item-price {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 0.7778em;
+    color: var(--dark-color);
+
+    @include tablet {
+      font-size: 1rem;
+      line-height: 1.375em;
+    }
+
+    &_bold {
+      font-weight: 600;
+    }
+  }
+}
+
+.other__list-swiper_double {
+  display: flex;
+  padding: 0 2.5rem;
+
+  @include tablet {
+    padding-right: 2.9375rem;
+    padding-left: 2.9375rem;
+  }
+
+  .swiper-wrapper {
+    min-height: 0;
+
+    flex-direction: column;
+    column-gap: 22px;
+    width: 100%;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: start;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__wrapper-block {
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+    &:first-child {
+      border-top-right-radius: 2.5rem;
+      border-top-left-radius: 2.5rem;
+    }
+
+    @include tablet {
+      border-radius: 2.5rem;
+    }
+  }
+}
+
+.diagnostic {
+  &__item {
+    overflow: hidden;
+    box-sizing: border-box;
+
+    background-color: var(--smoky-white-color);
+
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+
+    @include tablet {
+      padding: 2.8125rem 2.5rem;
+    }
+
+    &:nth-child(2n) {
+      background-color: #E3E9F0;
+    }
+
+    &:has(+ .diagnostic__footnote) {
+      border-radius: 0 0 2.5rem 2.5rem;
+    }
+
+    &_small-pd {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 1.0714em;
+
+    max-width: 69%;
+    width: auto;
+
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7143em;
+    color: #000;
+
+    @include tablet {
+      margin: 0;
+
+      max-width: unset;
+
+      font-size: 1.125rem;
+      font-weight: 600;
+      line-height: 1.3333em;
+    }
+  }
+
+  &__item-descr {
+    margin: 0;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4286em;
+    color: #000;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__item-price-block {
+    width: max-content;
+    display: block;
+  }
+
+  &__item-btn {
+    margin-right: 3.3em;
+
+    font-size: 1rem;
+    padding: 1.3em;
+
+    @include tablet {
+      margin-right: 3.3em;
+
+      font-size: 0.625rem;
+      padding: 1.3em;
+    }
+  }
+
+  &__item-price {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.7143em;
+    color: var(--dark-color);
+
+    @include tablet {
+      font-size: 1rem;
+      line-height: 1.375em;
+    }
+
+    &_bold {
+      font-weight: 600;
+    }
+  }
+
+  &__footnote-text {
+    -webkit-user-select: none;
+    user-select: none;
+    margin: 0;
+    padding-top: 2.5rem;
+    padding-left: 1.7857em;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7143em;
+    background: linear-gradient(45deg, #0273FF 0%, #013FFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include tablet {
+      font-size: 0.875rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 2.8571em;
+    }
+  }
+}

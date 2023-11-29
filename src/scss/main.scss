@@ -1,0 +1,51 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+
+@import "./components/btns";
+@import "./components/sections";
+@import "./components/breadcrumbs";
+@import "./components/advantages-slide";
+@import "./components/section-title";
+@import "./components/card-doc";
+@import "./components/docs-contact-block";
+@import "./components/card-diagnostics";
+@import "./components/card-consult";
+@import "./components/therapy-check-up-card";
+@import "./components/lists-swiper";
+@import "./components/article-cards";
+@import "./components/review-slide";
+
+@import "./components/check-up-modal";
+@import "./components/rec-modal";
+@import "./components/rec-modal-dl";
+@import "./components/info-modal";
+@import "./components/success-modal";
+@import "./components/online-consult-suitable-modal";
+
+
+@import "./components/header";
+@import "./components/main-header";
+@import "./components/about-section";
+@import "./components/doctors-section";
+@import "./components/diagnostics-section";
+@import "./components/check-up-section";
+@import "./components/methods-section";
+@import "./components/services-section";
+@import "./components/related-services-section";
+@import "./components/articles-section";
+@import "./components/rec-section";
+@import "./components/footer";
+
+
+@import "./components/directions-section";
+@import "./components/preoperative-section";
+@import "./components/surgery_check-up-section";
+@import "./components/how-performed-section";
+@import "./components/rehabilitation-section";
+
+@import "./components/popular-section";
+@import "./components/pet-goes-section";
+@import "./components/therapy_check-up-section";

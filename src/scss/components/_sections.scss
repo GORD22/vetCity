@@ -1,0 +1,31 @@
+.section {
+  margin-bottom: 2px;
+
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  border-radius: 3.5rem;
+  background: var(--light-color);
+
+  @include tablet {
+    border-radius: 3.75rem;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &_header {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  &_main {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+
+    @include tablet {
+      padding-right: 2.9375rem;
+      padding-left: 2.9375rem;
+    }
+  }
+}

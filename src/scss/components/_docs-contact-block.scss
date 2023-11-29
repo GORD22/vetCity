@@ -1,0 +1,292 @@
+.docs-contact-block {
+  width: 100%;
+  height: auto;
+
+  border-radius: 2.5rem;
+  padding: 2.5rem;
+  background: var(--smoky-white-color);
+
+  box-sizing: border-box;
+
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablet {
+    display: flex;
+
+    max-width: 40.875rem;
+  }
+
+  @include super-big-desktop {
+    max-width: 45.0625rem;
+  }
+
+  &__logo {
+    width: 3rem;
+    height: 2.3994rem;
+  }
+
+  &__list {
+    margin-bottom: 2rem;
+
+    &::before {
+      content: attr(title);
+      display: block;
+      margin-bottom: 1.0909em;
+
+      font-size: 2.2rem;
+      font-weight: 600;
+      line-height: 1.1818em;
+      letter-spacing: -0.0091em;
+      color: var(--light-color);
+
+      @include tablet {
+        margin-bottom: 0.6154em;
+
+        max-width: 22.0769em;
+
+        font-size: 1.625rem;
+        font-weight: 600;
+        line-height: 1.2308em;
+        letter-spacing: -0.0192em;
+        color: var(--dark-color);
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    column-gap: 0.8571em;
+
+    &::before {
+      content: '—';
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      color: inherit;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0.2857em;
+    }
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4286em;
+    color: var(--light-color);
+
+    @include tablet {
+      font-size: 0.875rem;
+      color: var(--dark-color);
+    }
+  }
+
+  &__filed-wrapper {
+    margin-bottom: 0.5rem;
+
+    width: 100%;
+    position: relative;
+
+    @include super-big-desktop {
+      max-width: 574px;
+    }
+  }
+
+  &__success-sub {
+    display: none;
+    margin: 0;
+    margin-bottom: 0.5714em;
+
+    height: 3.5714em;
+    padding: 1.1429em 0;
+
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.2857em;
+    letter-spacing: 0.2px;
+    color: #0142FF;
+  }
+
+  &__filed {
+    width: 100%;
+    padding: 1.3333em 14.5833em 1.3333em 2em;
+
+    border-radius: 2.5rem;
+    background: var(--light-color);
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    letter-spacing: 0.0167em;
+
+    &:focus+.docs-contact-block__field-placeholder {
+      display: none;
+    }
+  }
+
+  &__field-placeholder {
+    text-decoration: none;
+    pointer-events: none;
+
+    position: absolute;
+    top: 1.3333em;
+    left: 2em;
+    margin: 0;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.5em;
+    letter-spacing: 0.0167em;
+    color: #979797 !important;
+
+    & span {
+      color: var(--dark-color);
+    }
+
+    &_integral {
+      & span {
+        color: #979797 !important;
+      }
+    }
+  }
+
+  &__btn-sub {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
+
+  &__confidentiality {
+    margin: 0;
+
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: rgba(27, 27, 41, 0.60);
+
+    & span {
+      background: linear-gradient(45deg, #0273FF 0%, #013FFF 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.field-error {
+  color: #BC0A0A !important;
+  background-color: rgba(188, 10, 10, 0.10) !important;
+}
+
+.surgery_docs-contact-block {
+
+  max-width: 65.4rem;
+
+  @include tablet {
+
+    margin: 0 auto;
+
+    max-width: 77.5rem;
+  }
+
+  @include for-desktop {
+    max-width: 83.125rem;
+  }
+
+  @include super-big-desktop {
+    max-width: 1456px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 25px;
+
+    @include tablet {
+      flex-direction: row;
+      align-items: end;
+    }
+  }
+
+  &__list {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 0.9615em;
+
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.2308em;
+    color: var(--dark-color);
+    letter-spacing: -0.0192em;
+
+    @include tablet {
+      font-size: 1.625rem;
+    }
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 38.375rem;
+  }
+}
+
+.surgery-sheck-up {
+  margin-left: 0;
+}
+
+.gray-filed {
+  background-color: var(--smoky-white-color);
+}
+
+.hidden-with-animate-opac {
+  display: none;
+  animation: hidden-by-opacity 0.5s;
+}
+
+@keyframes hidden-by-opacity {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.show-with-animate-opac {
+  animation: show-by-opacity 0.5s;
+}
+
+.dislay-visible {
+  display: block;
+}
+
+@keyframes show-by-opacity {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0;
+    display: block;
+  }
+
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}

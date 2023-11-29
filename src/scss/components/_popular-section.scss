@@ -1,0 +1,69 @@
+.popular-section {
+  &__section-title {
+      margin-bottom: 2.3077em;
+  }
+
+  &__img-wrapper {
+    overflow: hidden;
+    position: relative;
+
+    margin: 0 auto;
+
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 365/400;
+
+    @include tablet {
+      margin: 0;
+
+      border-radius: 2.5rem;
+      max-width: 36rem;
+      aspect-ratio: 576/425;
+    }
+
+    @include super-big-desktop {
+      max-width: 713px;
+      aspect-ratio: 713/425;
+    }
+
+    & img {
+      display: block;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      max-width: unset;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__swiper {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+
+    width: 100%;
+
+    @include tablet {
+      padding: 0;
+    }
+
+    .swiper-wrapper {
+
+      @include tablet {
+        justify-content: end;
+        flex-wrap: wrap;
+        column-gap: 0.75rem;
+        row-gap: 1.5625rem;
+      }
+
+      @include for-desktop {
+        column-gap: 1.375rem;
+        row-gap: 1.5625rem;
+      }
+    }
+  }
+}

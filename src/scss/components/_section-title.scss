@@ -1,0 +1,17 @@
+.section-title {
+  margin: 0;
+
+  text-align: center;
+
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 1.1818em;
+  letter-spacing: -0.0091em;
+  color: var(--dark-color);
+
+  @include tablet {
+    font-size: 1.625rem;
+    line-height: 1.2308em;
+    letter-spacing: -0.0192em;
+  }
+}

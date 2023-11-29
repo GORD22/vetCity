@@ -1,0 +1,174 @@
+.diagnostics-section {
+    overflow: hidden;
+    &__section-title {
+        display: none;
+
+        @include tablet {
+            display: block;
+
+            margin-bottom: 2.3077em;
+        }
+    }
+
+    &__content {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+
+        margin-bottom: 5.4rem;
+
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-direction: column;
+
+        @include tablet {
+            flex-direction: row;
+            gap: 1.25rem;
+
+            margin-bottom: 3.375rem;
+            padding-right: 2.9375rem;
+            padding-left: 2.9375rem;
+        }
+    }
+
+    &__info {
+        order: 1;
+        width: 100%;
+
+        @include tablet {
+            order: unset;
+
+            max-width: 560px;
+            width: 50%;
+        }
+
+        @include super-big-desktop {
+            max-width: 600px;
+        }
+    }
+
+    &__info-title {
+        margin: 0;
+        margin-bottom: 0.9231em;
+
+        font-size: 2.6rem;
+        font-weight: 600;
+        line-height: 1.2308em;
+        letter-spacing: -0.0192em;
+        color: var(--dark-color);
+
+        @include tablet {
+            margin-bottom: 0.8889em;
+
+            font-size: 2.25rem;
+            line-height: 1.1111em;
+            letter-spacing: -0.0139em;
+        }
+    }
+
+    &__info-text {
+        margin: 0;
+        margin-bottom: 2.8571em;
+
+        &:not(:last-of-type) {
+            margin-bottom: 1.4286em;
+        }
+
+        font-weight: 400;
+        color: var(--dark-color);
+        font-size:1.4rem;
+        line-height: 1.4286em;
+
+        @include tablet {
+            margin-bottom: 3.5714em;
+
+            font-size: 0.875rem;
+        }
+    }
+
+    &__info-list-title {
+        margin: 0;
+        margin-bottom: 1.7778em;
+
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 1.3333em;
+        color: var(--dark-color);
+
+        @include tablet {
+            font-size: 1.125rem;
+        }
+    }
+
+    &__info-list {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @include small-tablet {
+            flex-wrap: nowrap;
+            justify-content: start;
+            gap: 2.5rem;
+        }
+    }
+
+    &__img-wrapper {
+        overflow: hidden;
+        position: relative;
+
+        margin: 0 auto;
+
+        max-width: 31.5rem;
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 315/210;
+
+        border-radius: 28px;
+
+        @include tablet {
+            margin: 0;
+
+            border-radius: 2.5rem;
+            max-width: 40.875rem;
+            aspect-ratio: 654/585;
+        }
+
+        @include super-big-desktop {
+            max-width: 44.5625rem;
+            aspect-ratio: 713/585;
+        }
+
+        & img {
+            display: block;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            max-width: unset;
+            height: 100%;
+        }
+    }
+
+    &__swiper {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+
+        @include tablet {
+            padding-right: 2.9375rem;
+            padding-left: 2.9375rem;
+        }
+
+        .swiper-wrapper {
+
+            @include tablet {
+                gap: 1.375rem;
+            }
+        }
+    }
+}
