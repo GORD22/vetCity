@@ -5485,6 +5485,25 @@ a {
     height: 25rem;
   }
 }
+.preoperative-section__content-with-video__new {
+  overflow: hidden;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-direction: column;
+}
+@media (min-width: 1016px) {
+  .preoperative-section__content-with-video__new {
+    border-radius: 2.5rem;
+    flex-direction: row;
+    -moz-column-gap: 1.375rem;
+         column-gap: 1.375rem;
+    margin-right: 2.9375rem;
+    margin-left: 2.9375rem;
+    padding-left: 3.125rem;
+  }
+}
 .preoperative-section__info {
   order: 1;
   width: 100%;
@@ -5511,6 +5530,21 @@ a {
 }
 @media (min-width: 1262px) {
   .preoperative-section__info_small {
+    padding-top: 2.5rem;
+  }
+}
+.preoperative-section__info_small__new {
+  max-width: 53.125rem;
+  max-height: 100%;
+  padding-top: 2.5rem;
+}
+@media (min-width: 1016px) {
+  .preoperative-section__info_small__new {
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 1262px) {
+  .preoperative-section__info_small__new {
     padding-top: 2.5rem;
   }
 }
@@ -5581,9 +5615,9 @@ a {
 .preoperative-section__btn-download span {
   color: gray;
   /*             background: linear-gradient(45deg, #0273FF 0%, #013FFF 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+     background-clip: text;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; */
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.5em;
@@ -5644,7 +5678,7 @@ a {
   max-height: 0.625rem;
   height: 100%;
   border-radius: 50%;
-  border: 2px solid #0142FF;
+  border: 2px solid #0142ff;
 }
 .preoperative-section__item:not(:last-child) {
   margin-bottom: 0.5714em;
@@ -5653,13 +5687,18 @@ a {
   display: flex;
   justify-content: space-between;
 }
+.preoperative-section__price-block__new {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
 .preoperative-section__price-block-text {
   margin: 0;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5em;
   text-transform: uppercase;
-  background: var(--animal-gradient, linear-gradient(45deg, #0273FF 0%, #013FFF 100%));
+  background: var(--animal-gradient, linear-gradient(45deg, #0273ff 0%, #013fff 100%));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -5714,6 +5753,20 @@ a {
 @media (min-width: 1566px) {
   .preoperative-section__video-block {
     max-width: 33.0625rem;
+    aspect-ratio: 529/400;
+  }
+}
+.preoperative-section__video-block__new {
+  position: relative;
+  overflow: hidden;
+  border-radius: 2.5rem;
+  max-width: 38.125rem;
+  height: auto;
+  aspect-ratio: 450/400;
+}
+@media (min-width: 1566px) {
+  .preoperative-section__video-block__new {
+    max-width: 43.0625rem;
     aspect-ratio: 529/400;
   }
 }
