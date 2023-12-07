@@ -10,12 +10,24 @@
   --content-width-sbd: 1456px;
   --container-offset-st: 2.5rem;
   --container-offset-bd: 2.9375rem;
-  --container-width-mobile: calc(var(--content-width-mobile) + (var(--container-offset-st) * 2));
-  --container-width-st: calc(var(--content-width-st) + (var(--container-offset-st) * 2));
-  --container-width-t: calc(var(--content-width-t) + (var(--container-offset-bd) * 2));
-  --container-width-fd: calc(var(--content-width-fd) + (var(--container-offset-bd) * 2));
-  --container-width-bd: calc(var(--content-width-bd) + (var(--container-offset-bd) * 2));
-  --container-width-sbd: calc(var(--content-width-sbd) + (var(--container-offset-bd) * 2));
+  --container-width-mobile: calc(
+  	var(--content-width-mobile) + (var(--container-offset-st) * 2)
+  );
+  --container-width-st: calc(
+  	var(--content-width-st) + (var(--container-offset-st) * 2)
+  );
+  --container-width-t: calc(
+  	var(--content-width-t) + (var(--container-offset-bd) * 2)
+  );
+  --container-width-fd: calc(
+  	var(--content-width-fd) + (var(--container-offset-bd) * 2)
+  );
+  --container-width-bd: calc(
+  	var(--content-width-bd) + (var(--container-offset-bd) * 2)
+  );
+  --container-width-sbd: calc(
+  	var(--content-width-sbd) + (var(--container-offset-bd) * 2)
+  );
   --light-color: #fff;
   --black-color: #000;
   --dark-color: #1b1b29;
@@ -5496,7 +5508,6 @@ a {
   display: flex;
   align-items: start;
   justify-content: space-between;
-  gap: 2rem;
   flex-direction: column;
 }
 @media (min-width: 1016px) {
@@ -5507,7 +5518,6 @@ a {
          column-gap: 1.375rem;
     margin-right: 2.9375rem;
     margin-left: 2.9375rem;
-    padding-left: 3.125rem;
   }
 }
 .preoperative-section__info {
@@ -5540,7 +5550,7 @@ a {
   }
 }
 .preoperative-section__info_small__new {
-  max-width: 53.125rem;
+  max-width: 79.125rem;
   max-height: 100%;
   padding-top: 2.5rem;
 }
@@ -6139,7 +6149,7 @@ a {
   margin: 0;
   margin-top: 2.2857em;
   border-radius: 1.875rem;
-  padding: 2.8571em 1.4286em;
+  padding: 1.25rem;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.42857em;
