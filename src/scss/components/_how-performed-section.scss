@@ -39,6 +39,30 @@
 		}
 	}
 
+	.swiper-pagination {
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		display: flex;
+		width: 10px;
+		height: 10px;
+		z-index: 10;
+	}
+
+	.swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		background-color: transparent;
+		border: 2px solid #fff;
+		margin: 0 5px;
+		cursor: pointer;
+		z-index: 10;
+	}
+
+	.swiper-pagination-bullet-active {
+		background-color: #fff;
+	}
+
 	&__swiper {
 		overflow: hidden;
 
@@ -238,6 +262,12 @@
 
 		@include super-big-desktop {
 			padding: 2.8571em;
+		}
+		&__small-paddings {
+			padding: 1.25rem;
+			@include super-big-desktop {
+				padding: 1.25rem;
+			}
 		}
 	}
 

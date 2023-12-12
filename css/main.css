@@ -3309,6 +3309,16 @@ a {
   }
 }
 
+.title-section-cardiology {
+  width: 100%;
+  min-width: 500px;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 111.111%;
+  letter-spacing: -1.08px;
+}
+
 .doctors-section {
   overflow: hidden;
   padding-left: 0;
@@ -3635,7 +3645,7 @@ a {
     height: 37.375rem;
     border-radius: 2.5rem;
     flex-direction: row;
-    background-color: #F1F4F8;
+    background-color: #f1f4f8;
   }
 }
 .check-up-section__preview {
@@ -3645,7 +3655,7 @@ a {
   position: relative;
   padding-top: 2.5rem;
   padding-left: 2rem;
-  background-color: #D3BDF0;
+  background-color: #d3bdf0;
 }
 @media (min-width: 1016px) {
   .check-up-section__preview {
@@ -3850,6 +3860,16 @@ a {
   .check-up-section__logo {
     display: block;
   }
+}
+
+.gap-wrap {
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.cardio-image {
+  height: 100%;
+  min-height: 100%;
 }
 
 .methods-section__section-title {
@@ -5996,6 +6016,27 @@ a {
     padding-left: 2.9375rem;
   }
 }
+.how-performed-section .swiper-pagination {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  width: 10px;
+  height: 10px;
+  z-index: 10;
+}
+.how-performed-section .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  margin: 0 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+.how-performed-section .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
 .how-performed-section__swiper {
   overflow: hidden;
   width: 100%;
@@ -6161,6 +6202,14 @@ a {
     padding: 2.8571em;
   }
 }
+.how-performed-section__gray-block-text__small-paddings {
+  padding: 1.25rem;
+}
+@media (min-width: 1566px) {
+  .how-performed-section__gray-block-text__small-paddings {
+    padding: 1.25rem;
+  }
+}
 
 .rehabilitation-section {
   overflow: hidden;
@@ -6183,6 +6232,36 @@ a {
     border-radius: 3.75rem;
     padding-top: 5rem;
     padding-right: 2.9375em;
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 1016px) {
+  .rehabilitation-section__cardiology {
+    flex-direction: row;
+    justify-content: right;
+    border-radius: 2.1875em;
+    background-image: url(/img/cardoligy_rehabilitation-section-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3.75rem;
+    padding-top: 5rem;
+    padding-right: 2.9375em;
+    padding-bottom: 5rem;
+  }
+}
+@media (min-width: 1016px) {
+  .rehabilitation-section__cardiology2 {
+    flex-direction: row;
+    justify-content: left;
+    border-radius: 2.1875em;
+    background-image: url(/img/cardoligy_rehabilitation-section-bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3.75rem;
+    padding-top: 5rem;
+    padding-left: 2.9375em;
     padding-bottom: 5rem;
   }
 }
