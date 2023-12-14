@@ -1,23 +1,37 @@
 import Swiper from 'swiper'
-import { Navigation } from 'swiper/modules'
+import { Navigation, Pagination } from 'swiper/modules'
 
 const surgeryHowPerformedSwiper = new Swiper('.how-performed-section__swiper', {
 	loop: true,
 	slidesPerView: 'auto',
-	modules: [Navigation],
+	modules: [Navigation, Pagination],
 	navigation: {
 		prevEl: '.about-section__btn-prev',
 		nextEl: '.about-section__btn-next',
 	},
-	on: {
-		slideChange: function () {
-			updateActiveBullet(this.realIndex)
-		},
-		init: function () {
-			updateActiveBullet(this.realIndex)
-		},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
 	},
 })
+
+surgeryHowPerformedSwiper.on('slideChange', () => {
+	updateActiveBullet(surgeryHowPerformedSwiper.realIndex)
+})
+
+updateActiveBullet(surgeryHowPerformedSwiper.realIndex)
+
+function handleSwiper() {
+	if (window.innerWidth > 1016) {
+		surgeryHowPerformedSwiper.enable()
+	} else {
+		surgeryHowPerformedSwiper.disable()
+	}
+}
+
+handleSwiper()
+
+window.addEventListener('resize', handleSwiper)
 
 function updateActiveBullet(index) {
 	const bullets = document.querySelectorAll('.swiper-pagination-bullet')

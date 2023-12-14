@@ -40,12 +40,13 @@
 	}
 
 	.swiper-pagination {
+		bottom: unset;
+		left: unset;
 		position: absolute;
-		top: 10px;
-		right: 10px;
+		top: 20px;
+		right: 20px;
 		display: flex;
-		width: 10px;
-		height: 10px;
+		justify-content: flex-end;
 		z-index: 10;
 	}
 
