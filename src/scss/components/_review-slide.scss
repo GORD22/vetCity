@@ -112,6 +112,9 @@
 }
 
 .review {
+	&__wrapper {
+		// display: flex;
+	}
 	&__page-title {
 		min-width: 345px;
 		min-height: 400px;
