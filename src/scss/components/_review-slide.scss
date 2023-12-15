@@ -1,95 +1,121 @@
 .review-slide {
-  user-select: none;
+	user-select: none;
 
-  max-width: 19.75rem;
-  height: auto;
-  padding: 1.875rem;
+	max-width: 19.75rem;
+	height: auto;
+	padding: 1.875rem;
 
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	row-gap: 1.5rem;
 
-  border: 1px solid #0273FF;
-  border-radius: 2.5rem;
+	border: 1px solid #0273ff;
+	border-radius: 2.5rem;
 
-  box-sizing: border-box;
+	box-sizing: border-box;
 
-  &_stomatology {
-    max-width: 21.7188rem;
-    padding-right: 4.375rem;
-  }
+	&_stomatology {
+		max-width: 21.7188rem;
+		padding-right: 4.375rem;
+	}
 
-  &__title {
-    margin: 0;
-    opacity: 0.5;
+	&__title {
+		margin: 0;
+		opacity: 0.5;
 
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.19149em;
-    letter-spacing: -0.0249em;
-    color: var(--dark-color);
-  }
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.19149em;
+		letter-spacing: -0.0249em;
+		color: var(--dark-color);
+	}
 
-  &__doc-block {
-    display: flex;
-    align-items: start;
-    column-gap: 0.625rem;
-  }
+	&__doc-block {
+		display: flex;
+		align-items: start;
+		column-gap: 0.625rem;
+	}
 
-  &__doc-name {
-    margin: 0;
-    margin-bottom: 0.2222em;
+	&__doc-name {
+		margin: 0;
+		margin-bottom: 0.2222em;
 
-    font-size: 1.125rem;
-    font-weight: 600;
-    line-height: 1.3333em;
-    letter-spacing: -0.0278em;
-    color: var(--dark-color);
-  }
+		font-size: 1.125rem;
+		font-weight: 600;
+		line-height: 1.3333em;
+		letter-spacing: -0.0278em;
+		color: var(--dark-color);
+	}
 
-  &__doc-post {
-    margin: 0;
-    opacity: 0.4;
+	&__doc-post {
+		margin: 0;
+		opacity: 0.4;
 
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: var(--dark-color);
-  }
+		font-size: 0.75rem;
+		font-weight: 400;
+		color: var(--dark-color);
+	}
 
-  &__doc-wrapper {
-    overflow: hidden;
-    position: relative;
+	&__doc-wrapper {
+		overflow: hidden;
+		position: relative;
 
-    border-radius: 50%;
+		border-radius: 50%;
 
-    min-width: 4rem;
-    max-width: 4rem;
-    min-height: 4rem;
-    max-height: 4rem;
+		min-width: 4rem;
+		max-width: 4rem;
+		min-height: 4rem;
+		max-height: 4rem;
 
-    & img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-  }
+		& img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
 
-  &__text {
-    margin: 0;
+	&__text {
+		margin: 0;
 
-    color: var(--dark-color);
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.4286em;
-  }
+		color: var(--dark-color);
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.4286em;
+	}
 
-  &__author {
-    margin: 0;
-    opacity: 0.4;
+	&__author {
+		margin: 0;
+		opacity: 0.4;
 
-    color: var(--dark-color);
-    font-size: 0.75rem;
-    font-weight: 400;
-  }
+		color: var(--dark-color);
+		font-size: 0.75rem;
+		font-weight: 400;
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 8px;
+	}
+	&__btn-prev {
+	}
+	&__btn-next {
+		transform: rotate(180deg);
+	}
+}
+
+.review {
+	&__page-title {
+		min-width: 345px;
+		min-height: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		div {
+			p {
+				font-size: 0.875rem;
+			}
+		}
+	}
 }

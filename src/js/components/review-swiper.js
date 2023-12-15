@@ -1,20 +1,22 @@
-import Swiper from "swiper";
-import { Navigation } from "swiper/modules"
+import Swiper from 'swiper'
+import { Navigation, Pagination } from 'swiper/modules'
 
-const reviewSwiper = new Swiper(".pet-goes-section__review-swiper", {
-    modules: [Navigation],
-
-    slidesPerView: 'auto',
-    slidesPerGroup: 1,
-    spaceBetween: 16,
-
-    breakpoints: {
-        1016: {
-            spaceBetween: 22,
-            navigation: {
-                nextEl: '.block-thumb-btns__btn-next',
-                prevEl: '.block-thumb-btns__btn-prev'
-            }
-        }
-    }
-});
+const reviewSwiper = new Swiper('.pet-goes-section__review-swiper', {
+	modules: [Navigation, Pagination],
+	slidesPerView: 'auto',
+	slidesPerGroup: 1,
+	spaceBetween: 16,
+	navigation: {
+		nextEl: '.block-thumb-btns__btn-next .review-slide__btn',
+		prevEl: '.block-thumb-btns__btn-prev .review-slide__btn',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	breakpoints: {
+		1016: {
+			spaceBetween: 22,
+		},
+	},
+})

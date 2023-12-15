@@ -17,13 +17,13 @@
 
 		border-top-right-radius: 3.5rem;
 		border-top-left-radius: 3.5rem;
-
+		max-height: 332px;
 		@include tablet {
 			overflow: hidden;
 
 			border-radius: 2.5rem;
 
-			margin-bottom: 3.75rem;
+			margin-bottom: 3.5rem;
 
 			background-color: var(--smoky-white-color);
 			gap: 1.25rem;
@@ -192,7 +192,7 @@
 		}
 
 		.swiper-wrapper {
-			height: inherit;
+			height: 220px;
 
 			@include tablet {
 				gap: 1.375rem;
