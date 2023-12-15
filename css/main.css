@@ -1944,6 +1944,12 @@ a {
   font-weight: 400;
   line-height: 1.4286em;
 }
+.review-slide__text a {
+  background: linear-gradient(45deg, #0273ff 0%, #013fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .review-slide__author {
   margin: 0;
   opacity: 0.4;
@@ -4182,7 +4188,7 @@ a {
 }
 @media (min-width: 1016px) {
   .services-section__header-container {
-    height: 21.875rem;
+    height: 19.5rem;
     gap: 1.25rem;
     border-radius: 2.5rem;
     background-color: var(--smoky-white-color);
@@ -4295,7 +4301,7 @@ a {
   }
 }
 .services-section__services-item-top_open .services-section__thumb-btn {
-  background: linear-gradient(45deg, #0273FF 0%, #013FFF 100%);
+  background: linear-gradient(45deg, #0273ff 0%, #013fff 100%);
   transform: rotate(-90deg);
 }
 .services-section__services-item-top_open .services-section__thumb-btn svg {
@@ -4313,7 +4319,7 @@ a {
   min-height: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
-  background: linear-gradient(123.75deg, #FAFAFA -30.52%, #D7DBE0 89.61%);
+  background: linear-gradient(123.75deg, #fafafa -30.52%, #d7dbe0 89.61%);
   transform: rotate(-180deg);
   transition: all 0.3s;
 }
@@ -4355,7 +4361,7 @@ a {
 .services-section__services-item-title span {
   display: inline-block;
   margin-left: 0.7727em;
-  color: #B6B6B6;
+  color: #b6b6b6;
 }
 @media (any-hover: hover) {
   .services-section__services-item-title:hover {
@@ -4431,7 +4437,7 @@ a {
   font-weight: 700;
   line-height: 1.1818em;
   letter-spacing: -0.0192;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 @media (min-width: 1016px) {
   .services-section__consult-info-title {
@@ -4447,7 +4453,7 @@ a {
   font-size: 1.4rem;
   line-height: 1.4286em;
   font-weight: 400;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 @media (min-width: 1016px) {
   .services-section__consult-info-text:not(:last-child) {
@@ -4509,7 +4515,7 @@ a {
   font-weight: 700;
   line-height: 1.1818em;
   letter-spacing: -0.0192em;
-  color: #2E2E2E;
+  color: #2e2e2e;
 }
 @media (min-width: 1016px) {
   .services-section__consult-online-title {
@@ -4539,7 +4545,7 @@ a {
   line-height: 1.5em;
   letter-spacing: 0.0167em;
   text-transform: uppercase;
-  background: var(--animal-gradient, linear-gradient(45deg, #0273FF 0%, #013FFF 100%));
+  background: var(--animal-gradient, linear-gradient(45deg, #0273ff 0%, #013fff 100%));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

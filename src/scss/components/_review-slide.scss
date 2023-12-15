@@ -83,6 +83,12 @@
 		font-size: 0.875rem;
 		font-weight: 400;
 		line-height: 1.4286em;
+		a {
+			background: linear-gradient(45deg, #0273ff 0%, #013fff 100%);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
 	}
 
 	&__author {
