@@ -1,171 +1,167 @@
 .doctors-section {
+	overflow: hidden;
+	padding-left: 0;
+	padding-right: 0;
 
-  overflow: hidden;
-  padding-left: 0;
-  padding-right: 0;
+	&__section-title {
+		margin: 0 auto;
+		margin-bottom: 2rem;
 
-  &__section-title {
-    margin: 0 auto;
-    margin-bottom: 2rem;
+		max-width: 11.5909em;
 
-    max-width: 11.5909em;
+		@include tablet {
+			margin: 0;
+			margin-bottom: 2.154em;
 
-    @include tablet {
-        margin: 0;
-        margin-bottom: 2.3077em;
+			max-width: unset;
+		}
+	}
 
-        max-width: unset;
-    }
-  }
+	&__doctors-swiper {
+		width: 100%;
 
-  &__doctors-swiper {
-    width: 100%;
+		padding: 0 2.5rem;
 
-    padding: 0 2.5rem;
+		@include tablet {
+			padding-right: 2.9375rem;
+			padding-left: 2.9375rem;
+		}
 
-    @include tablet {
-        padding-right: 2.9375rem;
-        padding-left: 2.9375rem;
-    }
+		.swiper-wrapper {
+			@include tablet {
+				gap: 1.375rem;
+			}
+		}
+	}
 
-    .swiper-wrapper {
+	&__sort-block {
+		display: flex;
+		column-gap: 0.5rem;
+	}
 
-        @include tablet {
-            gap: 1.375rem;
-        }
-    }
-  }
+	&__sort-btn {
+		border-radius: 2.5rem;
+		background-color: #f1f4f8;
 
-  &__sort-block {
-    display: flex;
-    column-gap: 0.5rem;
-  }
+		padding: 0.5714em 0.8571em;
 
-  &__sort-btn {
-    border-radius: 2.5rem;
-    background-color: #f1f4f8;
+		color: #1a1a1a;
+		font-size: 0.875rem;
+		font-weight: 500;
+		line-height: 1.4286em;
 
-    padding: 0.5714em 0.8571em;
+		& span {
+			color: #8d8d8d;
+			font-size: 0.875rem;
+			font-weight: 500;
+			line-height: 1.4286em;
+		}
 
-    color: #1a1a1a;
-    font-size: 0.875rem;
-    font-weight: 500;
-    line-height: 1.4286em;
+		&_active {
+			background-color: #0251ff;
+			color: var(--light-color);
 
-    & span {
-        color: #8d8d8d;
-        font-size: 0.875rem;
-        font-weight: 500;
-        line-height: 1.4286em;
-    }
+			& span {
+				color: inherit;
+			}
+		}
+	}
 
-    &_active {
-        background-color: #0251ff;
-        color: var(--light-color);
+	.docs-small-block {
+		background-color: #0142ff;
+		padding: 4rem 2rem;
 
-        & span {
-            color: inherit;
-        }
-    }
-  }
+		max-width: 29rem;
+		width: 100%;
+		height: auto;
 
-  .docs-small-block {
-    background-color: #0142FF;
-    padding: 4rem 2rem;
+		border-radius: 2.8rem;
 
-    max-width: 29rem;
-    width: 100%;
-    height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: space-between;
 
-    border-radius: 2.8rem;
+		box-sizing: border-box;
 
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: space-between;
+		&__list {
+			&:before {
+				max-width: 180px;
+			}
+		}
 
-    box-sizing: border-box;
+		&__btn {
+			padding: 1.3333em 2.0833em;
+			border-radius: 5em;
+			background: var(--light-color);
 
-    &__list {
-        &:before {
-            max-width: 180px;
-        }
-    }
+			font-size: 1.2rem;
+			font-weight: 600;
+			line-height: 1.5em;
+			letter-spacing: 0.0167em;
+			text-transform: uppercase;
+			color: var(--dark-color);
+		}
 
-    &__btn {
-        padding: 1.3333em 2.0833em;
-        border-radius: 5em;
-        background: var(--light-color);
-
-        font-size: 1.2rem;
-        font-weight: 600;
-        line-height: 1.5em;
-        letter-spacing: 0.0167em;
-        text-transform: uppercase;
-        color: var(--dark-color);
-    }
-
-    @include tablet {
-        display: none;
-    }
-  }
+		@include tablet {
+			display: none;
+		}
+	}
 }
 
 .survery_swiper-btns-block {
-  margin-bottom: 22px;
+	margin-bottom: 22px;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .btn-next,
 .btn-prev {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 
-  & img {
-    max-width: 49px;
-    width: 100%;
-    height: 20px;
-    aspect-ratio: 49/20;
-  }
+	& img {
+		max-width: 49px;
+		width: 100%;
+		height: 20px;
+		aspect-ratio: 49/20;
+	}
 
-  & .swiper-button-disabled {
-    visibility: hidden;
-  }
+	& .swiper-button-disabled {
+		visibility: hidden;
+	}
 }
 
 .btn-prev {
-  display: none;
-  transform: rotate(180deg);
+	display: none;
+	transform: rotate(180deg);
 
-  @include tablet {
-    display: inline-block;
-  }
+	@include tablet {
+		display: inline-block;
+	}
 }
 
-
 .survery_doctors-swiper {
+	@include tablet {
+		padding-bottom: 2.5rem;
+	}
 
-  @include tablet {
-    padding-bottom: 2.5rem;
-  }
+	.swiper-wrapper {
+		gap: 0;
 
-  .swiper-wrapper {
-    gap: 0;
-
-    @include tablet {
-      flex-wrap: nowrap;
-      justify-content: start;
-    }
-  }
+		@include tablet {
+			flex-wrap: nowrap;
+			justify-content: start;
+		}
+	}
 }
 
 .btn-next {
-  display: none;
+	display: none;
 
-  @include tablet {
-    display: inline-block;
-  }
+	@include tablet {
+		display: inline-block;
+	}
 }

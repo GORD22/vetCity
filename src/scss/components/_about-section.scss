@@ -1,210 +1,217 @@
 .about-section {
-  overflow: hidden;
-  padding: 0;
-  padding-bottom: 4rem;
+	overflow: hidden;
+	padding: 0;
+	padding-bottom: 4rem;
 
-  @include tablet {
-    padding: 5rem 2.9375rem;
-  }
+	@include tablet {
+		padding: 5rem 2.9375rem;
+	}
 
-  &__top {
-    margin-bottom: 4rem;
+	&__top {
+		margin-bottom: 4rem;
 
-    background-color: var(--light-color);
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+		background-color: var(--light-color);
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
 
-    border-top-right-radius: 3.5rem;
-    border-top-left-radius: 3.5rem;
+		border-top-right-radius: 3.5rem;
+		border-top-left-radius: 3.5rem;
+		max-height: 332px;
+		@include tablet {
+			overflow: hidden;
 
-    @include tablet {
-      overflow: hidden;
+			border-radius: 2.5rem;
 
-      border-radius: 2.5rem;
+			margin-bottom: 3.5rem;
 
-      margin-bottom: 3.75rem;
+			background-color: var(--smoky-white-color);
+			gap: 1.25rem;
+			flex-direction: row;
+		}
+	}
 
-      background-color: var(--smoky-white-color);
-      gap: 1.25rem;
-      flex-direction: row;
-    }
-  }
+	&__info-block {
+		order: 1;
 
-  &__info-block {
-    order: 1;
+		padding: 0 2.5rem;
+		padding-top: 4rem;
 
-    padding: 0 2.5rem;
-    padding-top: 4rem;
+		@include tablet {
+			order: unset;
 
-    @include tablet {
-      order: unset;
+			padding: 2.5rem 0 2.5rem 2.5rem;
 
-      padding: 2.5rem 0 2.5rem 2.5rem;
+			max-width: 560px;
+			width: 50%;
+		}
 
-      max-width: 560px;
-      width: 50%;
-    }
+		@include super-big-desktop {
+			max-width: 640px;
+		}
+	}
 
-    @include super-big-desktop {
-      max-width: 640px;
-    }
-  }
+	&__title {
+		margin: 0;
+		margin-bottom: 0.9231em;
 
-  &__title {
-    margin: 0;
-    margin-bottom: 0.9231em;
+		max-width: 11.1111em;
 
-    max-width: 11.1111em;
+		font-size: 2.6rem;
+		font-weight: 600;
+		line-height: 1.2308em;
+		letter-spacing: -0.0192em;
+		color: var(--dark-color);
 
-    font-size: 2.6rem;
-    font-weight: 600;
-    line-height: 1.2308em;
-    letter-spacing: -0.0192em;
-    color: var(--dark-color);
+		@include tablet {
+			margin-bottom: 0.8889em;
 
-    @include tablet {
-      margin-bottom: 0.8889em;
+			font-size: 2.25rem;
+			line-height: 1.1111em;
+			letter-spacing: -0.0083em;
+		}
 
-      font-size: 2.25rem;
-      line-height: 1.1111em;
-      letter-spacing: -0.0083em;
-    }
+		&_big {
+			max-width: unset;
+		}
+	}
 
-    &_big {
-      max-width: unset;
-    }
-  }
+	&__detail-text {
+		margin: 0;
 
-  &__detail-text {
-    margin: 0;
+		&:not(:last-child) {
+			margin-bottom: 1.4286em;
+		}
 
-    &:not(:last-child) {
-      margin-bottom: 1.4286em;
-    }
+		font-weight: 400;
+		color: var(--dark-color);
+		font-size: 1.4rem;
+		line-height: 1.4286em;
 
-    font-weight: 400;
-    color: var(--dark-color);
-    font-size: 1.4rem;
-    line-height: 1.4286em;
+		@include tablet {
+			&:not(:last-child) {
+				margin-bottom: 1.4286em;
+			}
 
-    @include tablet {
-      &:not(:last-child) {
-        margin-bottom: 1.4286em;
-      }
+			font-weight: 400;
+			color: var(--dark-color);
+			font-size: 0.875rem;
+			line-height: 1.4286em;
+		}
+	}
 
-      font-weight: 400;
-      color: var(--dark-color);
-      font-size: 0.875rem;
-      line-height: 1.4286em;
-    }
-  }
+	&__swiper {
+		overflow: hidden;
+		position: relative;
 
-  &__swiper {
-    overflow: hidden;
-    position: relative;
+		width: 100%;
+		height: 39.2rem;
+		aspect-ratio: 365/392;
 
-    width: 100%;
-    height: 39.2rem;
-    aspect-ratio: 365/392;
+		@include tablet {
+			max-width: 40.875rem;
+			height: auto;
+			aspect-ratio: 654/392;
+		}
 
-    @include tablet {
-      max-width: 40.875rem;
-      height: auto;
-      aspect-ratio: 654/392;
-    }
+		@include super-big-desktop {
+			max-width: 44.5625rem;
+			height: auto;
+			aspect-ratio: 713/392;
+		}
+	}
 
-    @include super-big-desktop {
-      max-width: 44.5625rem;
-      height: auto;
-      aspect-ratio: 713/392;
-    }
-  }
+	&__slide {
+		position: relative;
 
-  &__slide {
-    position: relative;
+		border-top-right-radius: 3.5rem;
+		border-top-left-radius: 3.5rem;
 
-    border-top-right-radius: 3.5rem;
-    border-top-left-radius: 3.5rem;
+		@include tablet {
+			border-radius: 0;
+		}
 
-    @include tablet {
-      border-radius: 0;
-    }
+		& img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 
-    & img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+			display: block;
 
-      display: block;
+			width: 100%;
+			height: 100%;
 
-      width: 100%;
-      height: 100%;
+			&:first-child {
+				display: none;
 
-      &:first-child {
-        display: none;
+				@include tablet {
+					display: block;
+				}
+			}
 
-        @include tablet {
-          display: block;
-        }
-      }
+			&:nth-child(2) {
+				@include tablet {
+					display: none;
+				}
+			}
+		}
+	}
 
-      &:nth-child(2) {
-        @include tablet {
-          display: none;
-        }
-      }
-    }
-  }
+	&__btn-prev {
+		position: absolute;
+		bottom: 2.5rem;
+		right: 7.4rem;
 
-  &__btn-prev {
-    position: absolute;
-    bottom: 2.5rem;
-    right: 7.4rem;
+		@include tablet {
+			bottom: 2.6875rem;
+			right: 6.1875rem;
+		}
+	}
 
-    @include tablet {
-      bottom: 2.6875rem;
-      right: 6.1875rem;
-    }
-  }
+	&__btn-next {
+		position: absolute;
+		bottom: 2.5rem;
+		right: 1.5rem;
+		transform: rotate(180deg);
 
-  &__btn-next {
-    position: absolute;
-    bottom: 2.5rem;
-    right: 1.5rem;
-    transform: rotate(180deg);
+		@include tablet {
+			bottom: 2.6875rem;
+			right: 2.5rem;
+		}
+	}
 
-    @include tablet {
-      bottom: 2.6875rem;
-      right: 2.5rem;
-    }
-  }
+	&__advantages-swiper {
+		overflow: hidden;
+		position: relative;
 
-  &__advantages-swiper {
-    overflow: hidden;
-    position: relative;
+		padding: 0 2.5rem;
 
-    padding: 0 2.5rem;
+		@include tablet {
+			padding: 0;
+		}
 
-    @include tablet {
-      padding: 0;
-    }
+		.swiper-wrapper {
+			height: 220px;
 
-    .swiper-wrapper {
-      height: inherit;
-
-      @include tablet {
-        gap: 1.375rem;
-      }
-    }
-  }
-
+			@include tablet {
+				gap: 1.375rem;
+			}
+		}
+	}
 }
 
 .detail-text_surgery {
-
-  @include tablet {
-    margin-bottom: 5rem;
-  }
+	@include tablet {
+		margin-bottom: 5rem;
+	}
+}
+.title-section-cardiology {
+	width: 100%;
+	min-width: 500px;
+	font-size: 2.1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 111.111%;
+	letter-spacing: -1.08px;
 }

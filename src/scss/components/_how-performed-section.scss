@@ -1,234 +1,278 @@
 .how-performed-section {
-  overflow: hidden;
+	overflow: hidden;
 
-  display: flex;
-  flex-direction: column;
-  row-gap: 4rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 4rem;
 
-  padding-top: 0;
-  padding-bottom: 4rem;
+	padding-top: 0;
+	padding-bottom: 4rem;
 
-  @include tablet {
-    row-gap: 3.75rem;
+	@include tablet {
+		row-gap: 3.75rem;
 
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
 
-  &__section-title {
-    display: none;
+	&__section-title {
+		display: none;
 
-    @include tablet {
-      display: block;
-    }
-  }
+		@include tablet {
+			display: block;
+		}
+	}
 
-  &__content {
-    display: flex;
-    align-items: start;
-    column-gap: 5rem;
-    flex-direction: column;
+	&__content {
+		display: flex;
+		align-items: start;
+		column-gap: 5rem;
+		flex-direction: column;
 
-    @include tablet {
-      flex-direction: row;
-      justify-content: space-between;
-      column-gap: 1.375rem;
+		@include tablet {
+			flex-direction: row;
+			justify-content: space-between;
+			column-gap: 1.375rem;
 
-      padding-right: 2.9375rem;
-      padding-left: 2.9375rem;
-    }
-  }
+			padding-right: 2.9375rem;
+			padding-left: 2.9375rem;
+		}
+	}
 
-  &__swiper {
-    overflow: hidden;
+	.swiper-pagination {
+		bottom: unset;
+		left: unset;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		display: flex;
+		justify-content: flex-end;
+		z-index: 10;
+	}
 
-    width: 100%;
-    height: 21rem;
+	.swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		background-color: transparent;
+		border: 2px solid #fff;
+		margin: 0 5px;
+		cursor: pointer;
+		z-index: 10;
+	}
 
-    aspect-ratio: 315/210;
+	.swiper-pagination-bullet-active {
+		background-color: #fff;
+	}
 
-    & .btn-thumb {
-      display: none;
-    }
+	&__swiper {
+		overflow: hidden;
 
-    &_stomatology {
-      width: 100%;
-      height: 21rem;
+		width: 100%;
+		height: 21rem;
 
-      aspect-ratio: 315/210;
-    }
+		aspect-ratio: 315/210;
 
-    @include tablet {
-        border-radius: 2.5rem;
-        margin: 0;
+		& .btn-thumb {
+			display: none;
+		}
 
-        max-width: 39rem;
-        width: 100%;
-        height: 34rem;
+		&_stomatology {
+			width: 100%;
+			height: 21rem;
 
-        aspect-ratio: 624/544;
+			aspect-ratio: 315/210;
+		}
 
-        & .btn-thumb {
-          display: inline-block;
-        }
+		@include tablet {
+			border-radius: 2.5rem;
+			margin: 0;
 
-        &_stomatology {
-          height: 100%;
-          aspect-ratio: 624/544;
-        }
-    }
+			max-width: 39rem;
+			width: 100%;
+			height: 34rem;
 
-    @include super-big-desktop {
-      max-width: 713px;
-      width: 100%;
-      height: 464px;
+			aspect-ratio: 624/544;
 
-      aspect-ratio: 713/464;
+			& .btn-thumb {
+				display: inline-block;
+			}
 
-      &_stomatology {
-        height: 544px;
+			&_stomatology {
+				height: 100%;
+				aspect-ratio: 624/544;
+			}
+		}
 
-        aspect-ratio: 713/544;
-      }
-    }
-  }
+		@include super-big-desktop {
+			max-width: 713px;
+			width: 100%;
+			height: 464px;
 
-  &__img-wrapper {
-    overflow: hidden;
-    position: relative;
+			aspect-ratio: 713/464;
 
-    & img {
-      display: block;
+			&_stomatology {
+				height: 544px;
 
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+				aspect-ratio: 713/544;
+			}
+		}
+	}
 
-      max-width: unset;
-      width: 100%;
-      height: 100%;
-    }
-  }
+	&__img-wrapper {
+		overflow: hidden;
+		position: relative;
 
-  &__info {
-    width: 100%;
+		& img {
+			display: block;
 
-    padding: 0 2.5rem;
-    padding-top: 2.5rem;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
 
-    @include tablet {
-      padding: 0;
+			max-width: unset;
+			width: 100%;
+			height: 100%;
+		}
+	}
 
-      max-width: 564px;
-      width: 50%;
+	&__info {
+		width: 100%;
 
-      &_stomatology {
-        max-width: 40.875rem;
-      }
-    }
+		padding: 0 2.5rem;
+		padding-top: 2.5rem;
 
-    @include super-big-desktop {
-      max-width: 600px;
+		@include tablet {
+			padding: 0;
 
-      &_stomatology {
-        max-width: 713px;
-      }
-    }
-  }
+			max-width: 564px;
+			width: 50%;
 
-  &__info-title {
-    margin: 0;
-    margin-bottom: 0.9231em;
+			&_stomatology {
+				max-width: 40.875rem;
+			}
+		}
 
-    font-size: 2.2rem;
-    font-weight: 600;
-    letter-spacing: -0.0192em;
-    color: var(--dark-color);
+		@include super-big-desktop {
+			max-width: 600px;
 
-    @include tablet {
-      margin-bottom: 0.8889em;
+			&_stomatology {
+				max-width: 713px;
+			}
+		}
+	}
 
-      max-width: 14.4444em;
+	&__info-title {
+		margin: 0;
+		margin-bottom: 0.9231em;
 
-      font-size: 2.25rem;
-      line-height: 1.1111;
-    }
-  }
+		font-size: 2.2rem;
+		font-weight: 600;
+		letter-spacing: -0.0192em;
+		color: var(--dark-color);
 
-  &__info-text {
-    margin: 0;
+		@include tablet {
+			margin-bottom: 0.8889em;
 
-    &:not(:last-of-type) {
-      margin-bottom: 1.1429em;
-    }
+			max-width: 14.4444em;
 
-    font-weight: 400;
-    color: var(--dark-color);
-    font-size: 1.4rem;
-    line-height: 1.4286em;
+			font-size: 2.25rem;
+			line-height: 1.1111;
+		}
+	}
 
-    @include tablet {
-      max-width: 37.1429em;
+	&__info-text {
+		margin: 0;
 
-      font-size: 0.875rem;
-    }
+		&:not(:last-of-type) {
+			margin-bottom: 1.1429em;
+		}
 
-    @include super-big-desktop {
-      max-width: unset;
-    }
-  }
+		font-weight: 400;
+		color: var(--dark-color);
+		font-size: 1.4rem;
+		line-height: 1.4286em;
 
-  &__list {
-    margin-block: 0;
-    margin-block-end: 1.1429em;
-    padding-inline-start: 1.4286em;
+		@include tablet {
+			max-width: 37.1429em;
 
-    max-width: 37.1429em;
+			font-size: 0.875rem;
+		}
 
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.4286em;
-    color: var(--dark-color);
+		@include super-big-desktop {
+			max-width: unset;
+		}
+	}
 
-    @include tablet {
-      font-size: 0.875rem;
-      max-width: unset;
-    }
+	&__list {
+		margin-block: 0;
+		margin-block-end: 1.1429em;
+		padding-inline-start: 1.4286em;
 
-    @include super-big-desktop {
-    }
-  }
+		max-width: 37.1429em;
 
-  &__item {
-    &_marg {
-      &:not(:last-child) {
-        @include tablet {
-          margin-bottom: 0.7143em;
-        }
-      }
-    }
-  }
+		font-size: 1.4rem;
+		font-weight: 400;
+		line-height: 1.4286em;
+		color: var(--dark-color);
 
-  &__gray-block-text {
-    margin: 0;
-    margin-top: 2.2857em;
+		@include tablet {
+			font-size: 0.875rem;
+			max-width: unset;
+		}
 
-    background-color: var(--smoky-white-color);
-    border-radius: 1.875rem;
-    padding: 2.8571em 1.4286em;
+		@include super-big-desktop {
+		}
+	}
 
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.42857em;
-    color: var(--dark-color);
+	&__item {
+		&_marg {
+			&:not(:last-child) {
+				@include tablet {
+					margin-bottom: 0.7143em;
+				}
+			}
+		}
+	}
 
-    @include super-big-desktop {
-      padding: 2.8571em;
-    }
-  }
+	&__gray-block-text {
+		margin: 0;
+		margin-top: 2.2857em;
 
-  /* &__swiper {
+		background-color: var(--smoky-white-color);
+		border-radius: 1.875rem;
+		padding: 2.8571em 1.4286em;
+
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.42857em;
+		color: var(--dark-color);
+
+		&__red {
+			margin: 0;
+			margin-top: 2.2857em;
+			border-radius: 1.875rem;
+			padding: 1.25rem;
+
+			font-size: 0.875rem;
+			font-weight: 400;
+			line-height: 1.42857em;
+			color: var(--dark-color);
+			background-color: rgba(241, 72, 72, 0.1);
+		}
+
+		@include super-big-desktop {
+			padding: 2.8571em;
+		}
+		&__small-paddings {
+			padding: 1.25rem;
+			@include super-big-desktop {
+				padding: 1.25rem;
+			}
+		}
+	}
+
+	/* &__swiper {
       padding: 0 2.5rem;
 
       @include tablet {
