@@ -1,21 +1,20 @@
 import Swiper from 'swiper'
 import { Navigation } from 'swiper/modules'
 
-const reviewSwiperStomatology = new Swiper(
-	'.pet-goes-section__review-swiper_stomatology',
+const reviewSwiperStomatology = new Swiper('.stomatology-reviews-section__swiper',
 	{
 		modules: [Navigation],
-		slidesPerView: 'auto',
-		slidesPerGroup: 1,
+    slidesPerView: 'auto',
+    slidesPerGroup: 2,
 		spaceBetween: 16,
 		navigation: {
-			nextEl: '.review-slide__btn-next',
-			prevEl: '.review-slide__btn-prev',
+			nextEl: '.stomatology-reviews-section .review-slide__btn-next',
+			prevEl: '.stomatology-reviews-section .review-slide__btn-prev',
 		},
 
 		breakpoints: {
 			1016: {
-				spaceBetween: 22,
+				spaceBetween: 24,
 			},
 		},
 	}

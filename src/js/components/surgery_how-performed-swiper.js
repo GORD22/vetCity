@@ -1,17 +1,13 @@
 import Swiper from 'swiper'
-import { Navigation, Pagination } from 'swiper/modules'
+import { Navigation } from 'swiper/modules'
 
 const surgeryHowPerformedSwiper = new Swiper('.surgery__how-performed-section__swiper', {
 	loop: true,
 	slidesPerView: 'auto',
-	modules: [Navigation, Pagination],
+	modules: [Navigation],
 	navigation: {
 		prevEl: '.about-section__btn-prev',
 		nextEl: '.about-section__btn-next',
-	},
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
 	},
 })
 

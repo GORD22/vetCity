@@ -16,10 +16,10 @@ const doctorsSwiper = new Swiper(".doctors-section__doctors-swiper", {
 
     breakpoints: {
         1016: {
-            spaceBetween: slidesCount >= 5 ? 22 : 0,
+            spaceBetween: slidesCount >= 3 ? 22 : 0,
             navigation: {
-                nextEl: slidesCount >= 5 ? '.btn-next' : '',
-                prevEl: slidesCount >= 5 ? '.btn-prev' : ''
+                nextEl: slidesCount >= 3 ? '.btn-next' : '',
+                prevEl: slidesCount >= 3 ? '.btn-prev' : ''
             }
         }
     }
@@ -27,14 +27,14 @@ const doctorsSwiper = new Swiper(".doctors-section__doctors-swiper", {
 
 if (window.innerWidth < 1016 && slidesCount === 3) {
     doctorsSwiper?.enable()
-} else if (slidesCount >= 5) {
+} else if (slidesCount >= 3) {
     doctorsSwiper?.enable()
 }
 
 window.addEventListener('resize', () => {
     if (window.innerWidth < 1016 && slidesCount == 3) {
         doctorsSwiper?.enable()
-    } else if (slidesCount >= 5) {
+    } else if (slidesCount >= 3) {
         doctorsSwiper?.enable()
     } else if (window.innerWidth >= 768 && slidesCount === 3) {
         doctorsSwiper.enabled = false

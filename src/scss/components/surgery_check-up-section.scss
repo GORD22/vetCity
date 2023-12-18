@@ -20,10 +20,12 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
-    gap: 1.25rem;
+    gap: 3.6rem;
     flex-direction: column;
 
     @include tablet {
+      gap: 1.25rem;
+
       padding-right: 2.9375rem;
       padding-left: 2.9375rem;
 

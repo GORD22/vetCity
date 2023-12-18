@@ -1,130 +1,192 @@
 .review-slide {
-	user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 
-	max-width: 19.75rem;
-	height: auto;
-	padding: 1.875rem;
+  max-width: 19.75rem;
+  height: auto;
+  padding: 1.875rem;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	row-gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 1.5rem;
 
-	border: 1px solid #0273ff;
-	border-radius: 2.5rem;
+  border: 1px solid #0273ff;
+  border-radius: 2.5rem;
 
-	box-sizing: border-box;
+  box-sizing: border-box;
 
-	&_stomatology {
-		max-width: 21.7188rem;
-		padding-right: 4.375rem;
-	}
+  &_stomatology {
+    max-width: 31.5rem;
+    width: 100%;
+    max-height: 40rem;
+    height: 100vh;
 
-	&__title {
-		margin: 0;
-		opacity: 0.5;
+    padding: 2rem;
+    padding-right: 1rem;
 
-		font-size: 0.875rem;
-		font-weight: 400;
-		line-height: 1.19149em;
-		letter-spacing: -0.0249em;
-		color: var(--dark-color);
-	}
+    @include tablet {
+      max-width: 21.5625rem;
+      max-height: 25rem;
 
-	&__doc-block {
-		display: flex;
-		align-items: start;
-		column-gap: 0.625rem;
-	}
+      padding: 1.25rem;
+      padding-right: 0.625rem;
+    }
 
-	&__doc-name {
-		margin: 0;
-		margin-bottom: 0.2222em;
+    &__text-block {
+      a {
+        background: linear-gradient(45deg, #0273ff 0%, #013fff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
 
-		font-size: 1.125rem;
-		font-weight: 600;
-		line-height: 1.3333em;
-		letter-spacing: -0.0278em;
-		color: var(--dark-color);
-	}
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 600;
 
-	&__doc-post {
-		margin: 0;
-		opacity: 0.4;
+        @include tablet {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
 
-		font-size: 0.75rem;
-		font-weight: 400;
-		color: var(--dark-color);
-	}
+  &__title {
+    margin: 0;
+    opacity: 0.5;
 
-	&__doc-wrapper {
-		overflow: hidden;
-		position: relative;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.19149em;
+    letter-spacing: -0.0249em;
+    color: var(--dark-color);
+  }
 
-		border-radius: 50%;
+  &__doc-block {
+    display: flex;
+    align-items: center;
+    column-gap: 0.625rem;
+  }
 
-		min-width: 4rem;
-		max-width: 4rem;
-		min-height: 4rem;
-		max-height: 4rem;
+  &__doc-name {
+    margin: 0;
+    margin-bottom: 0.2222em;
 
-		& img {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-	}
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.3333em;
+    letter-spacing: -0.0278em;
+    color: var(--dark-color);
 
-	&__text {
-		margin: 0;
+    @include tablet {
+      font-size: 1.125rem;
+    }
+  }
 
-		color: var(--dark-color);
-		font-size: 0.875rem;
-		font-weight: 400;
-		line-height: 1.4286em;
-		a {
-			background: linear-gradient(45deg, #0273ff 0%, #013fff 100%);
-			background-clip: text;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-		}
-	}
+  &__doc-post {
+    margin: 0;
+    opacity: 0.4;
 
-	&__author {
-		margin: 0;
-		opacity: 0.4;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--dark-color);
 
-		color: var(--dark-color);
-		font-size: 0.75rem;
-		font-weight: 400;
-	}
+    @include tablet {
+      font-size: 0.75rem;
+    }
+  }
 
-	&__buttons {
-		display: flex;
-		gap: 8px;
-	}
-	&__btn-prev {
-	}
-	&__btn-next {
-		transform: rotate(180deg);
-	}
+  &__doc-wrapper {
+    overflow: hidden;
+    position: relative;
+
+    border-radius: 50%;
+
+    min-width: 6.4rem;
+    max-width: 6.4rem;
+    min-height: 6.4rem;
+    max-height: 6.4rem;
+
+    @include tablet {
+      min-width: 4rem;
+      max-width: 4rem;
+      min-height: 4rem;
+      max-height: 4rem;
+    }
+
+    & img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__text {
+    margin: 0;
+
+    color: var(--dark-color);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.4286em;
+
+    &_stomatology {
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+      max-height: 23.6rem;
+      height: 100vh;
+
+      color: #202020;
+
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.22em;
+
+      @include tablet {
+        max-height: 12.5rem;
+
+        font-size: 1.125rem;
+      }
+    }
+  }
+
+  &__author {
+    margin: 0;
+    opacity: 0.4;
+
+    color: var(--dark-color);
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__btn-prev {}
+
+  &__btn-next {
+    transform: rotate(180deg);
+  }
 }
 
 .review {
-	&__wrapper {
-		// display: flex;
-	}
-	&__page-title {
-		min-width: 345px;
-		min-height: 400px;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		div {
-			p {
-				font-size: 0.875rem;
-			}
-		}
-	}
+  &__wrapper {
+    // display: flex;
+  }
+
+  &__page-title {
+    min-width: 345px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div {
+      p {
+        font-size: 0.875rem;
+      }
+    }
+  }
 }

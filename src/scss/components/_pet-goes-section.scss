@@ -1,9 +1,56 @@
 .pet-goes-section {
+  overflow: hidden;
+
   padding-right: 0;
   padding-left: 0;
   display: flex;
   flex-direction: column;
-  row-gap: 3.75rem;
+  row-gap: 2.4rem;
+
+  @include tablet {
+    row-gap: 3.75rem;
+  }
+
+  &__title-wrapper {
+    padding: 0 2.5rem;
+
+    @include tablet {
+      padding: 0;
+    }
+  }
+
+  &__section-title {
+    margin-bottom: 2.4rem;
+
+    text-align: start;
+
+    @include tablet {
+      margin: 0;
+
+      text-align: center;
+    }
+  }
+
+  &__section-text {
+    color: #202020;
+
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42em;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &_stomatology {
+    padding-top: 0;
+
+    @include tablet {
+      padding-top: 5rem;
+    }
+  }
 
   &__img-wrapper {
     overflow: hidden;
@@ -69,10 +116,6 @@
   &__review-swiper {
     width: 100%;
     padding: 0 6.875rem;
-
-    &_stomatology {
-      padding: 0 2.9375rem;
-    }
   }
 
   &__review-swiper-top {

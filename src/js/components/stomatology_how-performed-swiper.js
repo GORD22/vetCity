@@ -2,7 +2,7 @@ import Swiper from 'swiper'
 import { Navigation, Pagination } from 'swiper/modules'
 
 const stomatologyHowPerformedSwiper = new Swiper(
-	'.stomatology__how-performed-section__swiper',
+	'.how-performed-section__swiper_stomatology',
 	{
 		loop: true,
 		slidesPerView: 'auto',
@@ -17,27 +17,3 @@ const stomatologyHowPerformedSwiper = new Swiper(
 		},
 	}
 )
-
-function handleSwiper() {
-	if (window.innerWidth > 1016) {
-		stomatologyHowPerformedSwiper.enable()
-	} else {
-		stomatologyHowPerformedSwiper.disable()
-	}
-}
-
-handleSwiper()
-
-window.addEventListener('resize', handleSwiper)
-
-if (window.innerWidth > 1016) {
-	stomatologyHowPerformedSwiper?.enable()
-}
-
-window.addEventListener('resize', () => {
-	if (window.innerWidth > 1016) {
-		stomatologyHowPerformedSwiper?.enable()
-	} else {
-		stomatologyHowPerformedSwiper.enabled = false
-	}
-})

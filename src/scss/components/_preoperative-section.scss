@@ -1,413 +1,455 @@
 .preoperative-section {
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	row-gap: 4rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
 
-	padding-top: 0;
+  padding-top: 0;
 
-	@include tablet {
-		row-gap: 3.75rem;
+  @include tablet {
+    row-gap: 3.75rem;
 
-		border-radius: 3.75rem;
-		padding-top: 5rem;
+    border-radius: 3.75rem;
+    padding-top: 5rem;
 
-		margin-bottom: -3px;
-		border-bottom-right-radius: 0;
-		border-bottom-left-radius: 0;
-		padding-bottom: 0;
-	}
+    margin-bottom: -3px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-bottom: 0;
+  }
 
-	&__section-title {
-		display: none;
+  &__section-title {
+    display: none;
 
-		@include tablet {
-			display: block;
-		}
-	}
+    @include tablet {
+      display: block;
+    }
+  }
 
-	& hr {
-		display: none;
-		border: none;
+  & hr {
+    display: none;
+    border: none;
 
-		@include tablet {
-			display: block;
+    @include tablet {
+      display: block;
 
-			margin: 0 auto;
+      margin: 0 auto;
 
-			max-width: 83.125rem;
-			width: 100%;
-			height: 1px;
-			background-color: rgba($color: #000000, $alpha: 0.3);
-		}
+      max-width: 83.125rem;
+      width: 100%;
+      height: 1px;
+      background-color: rgba($color: #000000, $alpha: 0.3);
+    }
 
-		@include super-big-desktop {
-			max-width: 1456px;
-		}
-	}
+    @include super-big-desktop {
+      max-width: 1456px;
+    }
+  }
 
-	&__content {
-		display: flex;
-		align-items: start;
-		justify-content: space-between;
-		gap: 2rem;
-		flex-direction: column;
+  &__content {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-direction: column;
 
-		@include tablet {
-			flex-direction: row;
-			gap: 1.25rem;
+    @include tablet {
+      flex-direction: row;
+      gap: 1.25rem;
 
-			padding-right: 2.9375rem;
-			padding-left: 2.9375rem;
-		}
-	}
+      padding-right: 2.9375rem;
+      padding-left: 2.9375rem;
+    }
+  }
 
-	&__content-with-video {
-		overflow: hidden;
-		display: flex;
-		align-items: start;
-		justify-content: space-between;
-		gap: 2rem;
-		flex-direction: column;
+  &__content-with-video {
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-direction: column;
 
-		background-color: var(--smoky-white-color);
+    background-color: var(--smoky-white-color);
 
-		@include tablet {
-			border-radius: 2.5rem;
-			flex-direction: row;
-			column-gap: 1.375rem;
+    @include tablet {
+      border-radius: 2.5rem;
+      flex-direction: row;
+      column-gap: 1.375rem;
 
-			margin-right: 2.9375rem;
-			margin-left: 2.9375rem;
-			padding-left: 3.125rem;
+      margin-right: 2.9375rem;
+      margin-left: 2.9375rem;
+      padding-left: 3.125rem;
 
-			height: 25rem;
-		}
-		&__new {
-			overflow: hidden;
-			display: flex;
-			align-items: start;
-			justify-content: space-between;
-			// gap: 2rem;
-			flex-direction: column;
+      height: 25rem;
+    }
 
-			// background-color: var(--smoky-white-color);
+    &__new {
+      flex-direction: column-reverse;
 
-			@include tablet {
-				border-radius: 2.5rem;
-				flex-direction: row;
-				column-gap: 1.375rem;
+      overflow: hidden;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
 
-				margin-right: 2.9375rem;
-				margin-left: 2.9375rem;
-				// padding-left: 3.125rem;
+      // background-color: var(--smoky-white-color);
 
-				// height: 25rem;
-			}
-		}
-	}
+      @include tablet {
+        flex-direction: column;
 
-	&__info {
-		order: 1;
-		width: 100%;
+        //border-radius: 2.5rem;
+        flex-direction: row;
+        column-gap: 1.375rem;
 
-		padding-right: 2.5rem;
-		padding-left: 2.5rem;
+        margin-right: 2.9375rem;
+        margin-left: 2.9375rem;
+        // padding-left: 3.125rem;
 
-		@include tablet {
-			order: unset;
+        // height: 25rem;
+      }
+    }
+  }
 
-			padding: 0;
+  &__info {
+    order: 1;
+    width: 100%;
 
-			max-width: 35.25rem;
-			width: 50%;
-		}
-	}
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
 
-	&__info_small {
-		max-width: 23.125rem;
-		max-height: 100%;
+    @include tablet {
+      order: unset;
 
-		padding-top: 2.5rem;
+      padding: 0;
 
-		@include tablet {
-			padding-top: 1rem;
-		}
+      max-width: 35.25rem;
+      width: 50%;
+    }
+  }
 
-		@include for-desktop {
-			padding-top: 2.5rem;
-		}
-		&__new {
-			max-width: 79.125rem;
-			max-height: 100%;
+  &__info_small {
+    max-width: 23.125rem;
+    max-height: 100%;
 
-			padding-top: 2.5rem;
+    padding-top: 2.5rem;
 
-			@include tablet {
-				padding-top: 1rem;
-			}
+    @include tablet {
+      padding-top: 1rem;
+    }
 
-			@include for-desktop {
-				padding-top: 2.5rem;
-			}
-		}
-	}
+    @include for-desktop {
+      padding-top: 2.5rem;
+    }
 
-	&__info-title {
-		margin: 0;
-		margin-bottom: 0.9231em;
+    &__new {
+      padding: 0 2.5rem;
 
-		max-width: 9.8462em;
+      max-width: 38.8125rem;
+    }
+  }
 
-		font-size: 2.6rem;
-		font-weight: 600;
-		line-height: 1.2308em;
-		letter-spacing: -0.0192em;
-		color: var(--dark-color);
+  &__info-title {
+    margin: 0;
+    margin-bottom: 0.9231em;
 
-		@include tablet {
-			margin-bottom: 0.8889em;
+    max-width: 9.8462em;
 
-			max-width: 12.7778em;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.2308em;
+    letter-spacing: -0.0192em;
+    color: var(--dark-color);
 
-			font-size: 2.25rem;
-			line-height: 1.1111em;
+    @include tablet {
+      margin-bottom: 0.8889em;
 
-			&_small {
-				margin-bottom: 0.6667em;
+      max-width: 12.7778em;
 
-				@include tablet {
-					margin-bottom: 0.25em;
-				}
+      font-size: 2.25rem;
+      line-height: 1.1111em;
+    }
 
-				@include for-desktop {
-					margin-bottom: 0.6667em;
-				}
-			}
-		}
-	}
+    &_stomatology {
+      max-width: 38.8125rem;
+    }
+  }
 
-	&__info-text {
-		margin: 0;
-		margin-bottom: 24px;
+  &__info-text {
+    margin: 0;
+    margin-bottom: 24px;
 
-		font-weight: 400;
-		color: var(--dark-color);
-		font-size: 1.4rem;
-		line-height: 20px;
+    font-weight: 400;
+    color: var(--dark-color);
+    font-size: 1.4rem;
+    line-height: 20px;
 
-		@include tablet {
-			max-width: 37.1429em;
-			margin-bottom: 2.2857em;
+    @include tablet {
+      max-width: 37.1429em;
+      margin-bottom: 2.2857em;
 
-			&:not(:last-of-type) {
-				margin-bottom: 15px;
-			}
+      &:not(:last-of-type) {
+        margin-bottom: 1.5rem;
+      }
 
-			font-size: 0.875rem;
-		}
-	}
+      font-size: 0.875rem;
+    }
 
-	&__btn-download {
-		pointer-events: none;
-		display: flex;
-		align-items: center;
-		column-gap: 0.625rem;
+    &_stomatology {
+      max-width: 38.8125rem;
 
-		padding: 0.3125rem 0;
+      &:last-of-type {
+        margin-bottom: 3rem;
+      }
 
-		& svg {
-			width: 1.5rem;
-			height: 1.5rem;
+      @include tablet {
+        margin-bottom: 2.5rem;
 
-			fill: none;
-			stroke-width: 2px;
-			stroke: gray;
-		}
+        &:last-of-type {
+          margin-bottom: 2.5rem;
+        }
+      }
+    }
+  }
 
-		& span {
-			color: gray;
-			/*             background: linear-gradient(45deg, #0273FF 0%, #013FFF 100%);
+  &__btn-download {
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    column-gap: 0.625rem;
+
+    padding: 0.3125rem 0;
+
+    & svg {
+      width: 1.5rem;
+      height: 1.5rem;
+
+      fill: none;
+      stroke-width: 2px;
+      stroke: gray;
+    }
+
+    & span {
+      color: gray;
+      /*             background: linear-gradient(45deg, #0273FF 0%, #013FFF 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; */
 
-			font-size: 1.2rem;
-			font-weight: 600;
-			line-height: 1.5em;
-			letter-spacing: 0.0167em;
-			text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.5em;
+      letter-spacing: 0.0167em;
+      text-transform: uppercase;
 
-			@include tablet {
-				font-size: 0.75rem;
-			}
-		}
-	}
+      @include tablet {
+        font-size: 0.75rem;
+      }
+    }
+  }
 
-	&__middle-block {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		padding-top: 3.25rem;
-		padding-bottom: 2.5rem;
-		max-width: 23.75rem;
-		height: 100%;
+  &__middle-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 3.25rem;
+    padding-bottom: 2.5rem;
+    max-width: 23.75rem;
+    height: 100%;
 
-		@include tablet {
-			padding-top: 1.375rem;
-			padding-bottom: 1.375rem;
-		}
+    @include tablet {
+      padding-top: 1.375rem;
+      padding-bottom: 1.375rem;
+    }
 
-		@include for-desktop {
-			padding-top: 2.5rem;
-			padding-bottom: 2.5rem;
-		}
-	}
+    @include for-desktop {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+  }
 
-	&__list {
-		&::before {
-			content: attr(title);
-			display: block;
-			margin-bottom: 1em;
+  &__list {
+    &::before {
+      content: attr(title);
+      display: block;
+      margin-bottom: 1.5rem;
 
-			font-size: 1.25rem;
-			font-weight: 600;
-			line-height: 1em;
-			color: var(--dark-color);
-		}
-	}
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1em;
+      color: var(--dark-color);
 
-	&__item {
-		position: relative;
-		padding-left: 1.2857em;
+      @include tablet {
+        font-size: 1.25rem;
+      }
+    }
+  }
 
-		color: var(--dark-color);
-		font-size: 0.875rem;
-		font-weight: 400;
-		line-height: 1.42857em;
+  &__item {
+    position: relative;
+    padding-left: 1.2857em;
 
-		&::before {
-			content: '';
-			position: absolute;
-			top: 48%;
-			left: 0;
-			transform: translate(0, -50%);
-			max-width: 0.625rem;
-			width: 100%;
-			max-height: 0.625rem;
-			height: 100%;
-			border-radius: 50%;
-			border: 2px solid #0142ff;
-		}
+    color: var(--dark-color);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.42857em;
 
-		&:not(:last-child) {
-			margin-bottom: 0.5714em;
-		}
-	}
+    &::before {
+      content: '';
+      position: absolute;
+      top: 48%;
+      left: 0;
+      transform: translate(0, -50%);
+      max-width: 0.625rem;
+      width: 100%;
+      max-height: 0.625rem;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px solid #0142ff;
+    }
 
-	&__price-block {
-		display: flex;
-		justify-content: space-between;
-		&__new {
-			display: flex;
-			justify-content: space-between;
-			margin-top: 1.5em;
-		}
-	}
+    &:not(:last-child) {
+      margin-bottom: 0.5714em;
+    }
 
-	&__price-block-text {
-		margin: 0;
+    &_stomatology {
+      font-size: 1.4rem;
 
-		font-size: 1rem;
-		font-weight: 600;
-		line-height: 1.5em;
-		text-transform: uppercase;
-		background: var(
-			--animal-gradient,
-			linear-gradient(45deg, #0273ff 0%, #013fff 100%)
-		);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
+      @include tablet {
+        font-size: 0.875rem;
 
-	&__price-block-price {
-		margin: 0;
+      }
 
-		color: var(--dark-color);
-		font-size: 1.125rem;
-		font-weight: 600;
-		line-height: 1.3333em;
-	}
+      &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        max-width: 0.3125rem;
+        width: 100%;
+        max-height: 0.3125rem;
+        height: 100%;
+        border-radius: 50%;
+        background-color: #0142ff;
+      }
+    }
+  }
 
-	&__img-wrapper {
-		overflow: hidden;
-		position: relative;
+  &__price-block {
+    display: flex;
+    justify-content: space-between;
 
-		margin: 0 auto;
+    &__new {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.5em;
+    }
+  }
 
-		width: 100%;
-		height: auto;
+  &__price-block-text {
+    margin: 0;
 
-		aspect-ratio: 365/400;
+    font-weight: 600;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    background: var(--animal-gradient,
+        linear-gradient(45deg, #0273ff 0%, #013fff 100%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-		@include tablet {
-			margin: 0;
+  &__price-block-price {
+    margin: 0;
 
-			border-radius: 2.5rem;
-			max-width: 40.875rem;
-			aspect-ratio: 654/354;
-		}
+    color: var(--dark-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.3333em;
 
-		@include super-big-desktop {
-			max-width: 713px;
-			aspect-ratio: 713/354;
-		}
+    @include tablet {
+      font-size: 1.125rem;
+    }
+  }
 
-		& img {
-			display: block;
+  &__img-wrapper {
+    overflow: hidden;
+    position: relative;
 
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+    margin: 0 auto;
 
-			max-width: unset;
-			width: 100%;
-			height: 100%;
-		}
-	}
+    width: 100%;
+    height: auto;
 
-	&__video-block {
-		position: relative;
-		overflow: hidden;
-		border-radius: 2.5rem;
-		max-width: 28.125rem;
-		height: auto;
-		aspect-ratio: 450/400;
+    aspect-ratio: 365/400;
 
-		@include super-big-desktop {
-			max-width: 33.0625rem;
-			aspect-ratio: 529/400;
-		}
-		&__new {
-			position: relative;
-			overflow: hidden;
-			border-radius: 2.5rem;
-			max-width: 38.125rem;
-			height: auto;
-			aspect-ratio: 450/400;
+    @include tablet {
+      margin: 0;
 
-			@include super-big-desktop {
-				max-width: 43.0625rem;
-				aspect-ratio: 529/400;
-			}
-		}
-	}
+      border-radius: 2.5rem;
+      max-width: 40.875rem;
+      aspect-ratio: 654/354;
+    }
 
-	&__video {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
+    @include super-big-desktop {
+      max-width: 713px;
+      aspect-ratio: 713/354;
+    }
+
+    & img {
+      display: block;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      max-width: unset;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__video-block {
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 2.5rem;
+    max-width: 28.125rem;
+    height: auto;
+    aspect-ratio: 450/400;
+
+    @include super-big-desktop {
+      max-width: 33.0625rem;
+      aspect-ratio: 529/400;
+    }
+
+    &__new {
+      position: relative;
+      overflow: hidden;
+
+      margin-bottom: 4rem;
+
+      height: 40rem;
+
+      @include tablet {
+        margin: 0;
+
+        border-radius: 2.5rem;
+        max-width: 44.625rem;
+        height: auto;
+        aspect-ratio: 535/408;
+      }
+
+      @include for-desktop {
+        aspect-ratio: 714/454;
+      }
+    }
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
