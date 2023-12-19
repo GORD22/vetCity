@@ -24,13 +24,13 @@
   }
 
   &__header-top {
-    margin-bottom: 3rem;
+    margin-bottom: 3.2rem;
 
     display: flex;
     justify-content: space-between;
 
     @include tablet {
-      margin-bottom: 3.75rem;
+      margin-bottom: 2rem;
     }
   }
 

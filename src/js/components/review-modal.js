@@ -1,24 +1,28 @@
 import { disableScroll } from '../functions/disable-scroll'
 import { enableScroll } from '../functions/enable-scroll'
-;(function () {
-	const btnOpen = document.getElementById('why-btn')
-	const btnClose = document.getElementById('why-close')
-	const overlay = document.querySelector('.why-modal__overlay')
-	const modal = document.getElementById('popup-why')
 
-	btnOpen?.addEventListener('click', () => {
-		console.log('open')
-		modal.classList.add('modal-wrapper_show')
-		disableScroll()
-	})
+(function () {
+  const btnOpen = document.querySelectorAll('.review-slide__read-all')
+  const btnClose = document.querySelector('.review-modal .rec-modal__btn-close')
+  const overlay = document.querySelector('.review-modal__overlay')
+  const modal = document.querySelector('.modal-wrapper_review-modal')
 
-	btnClose?.addEventListener('click', () => {
-		modal.classList.remove('modal-wrapper_show')
-		enableScroll()
-	})
+  for (let i = 0; i < btnOpen?.length; i++) {
+    btnOpen[i]?.addEventListener('click', () => {
+      console.log('sdsds')
+      modal.classList.add('modal-wrapper_show')
+      disableScroll()
+      modal.style = `max-height: ${modal.offsetHeight}px; height: 100%;`
+    })
+  }
 
-	overlay?.addEventListener('click', () => {
-		modal.classList.remove('modal-wrapper_show')
-		enableScroll()
-	})
+  btnClose?.addEventListener('click', () => {
+    modal.classList.remove('modal-wrapper_show')
+    enableScroll()
+  })
+
+  overlay?.addEventListener('click', () => {
+    modal.classList.remove('modal-wrapper_show')
+    enableScroll()
+  })
 })()

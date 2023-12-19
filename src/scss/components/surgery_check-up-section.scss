@@ -76,7 +76,7 @@
     margin-bottom: 1.4286em;
 
     &:not(:last-of-type) {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     font-weight: 400;
@@ -85,13 +85,15 @@
     line-height: 1.4286em;
 
     & a {
+      cursor: pointer;
+
       font-size: inherit;
       color: #0142FF;
     }
 
     @include tablet {
       max-width: 37.1429em;
-      margin-bottom: 2.2857em;
+      margin-bottom: 2.375rem;
 
       font-size: 0.875rem;
     }

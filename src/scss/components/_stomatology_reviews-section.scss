@@ -26,10 +26,14 @@
 
     & p {
       display: none;
+
+      @include tablet {
+        display: block;
+      }
     }
 
     @include tablet {
-      max-width: 22.5625rem;
+      max-width: 21.5625rem;
       width: 100%;
 
       .section-title {
@@ -57,6 +61,11 @@
     @include tablet {
       display: block;
     }
+  }
+
+  .btn-thumb:disabled {
+    pointer-events: none;
+    opacity: 0.3;
   }
 
   &__swiper {

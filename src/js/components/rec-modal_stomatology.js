@@ -91,7 +91,7 @@ import { enableScroll } from "../functions/enable-scroll"
   const modal = document.querySelector('.rec-modal_stomatology')
   const priceBlock = document.querySelector('.rec-modal_stomatology .rec-modal__price-block')
   const confidentiality = document.querySelector('.rec-modal_stomatology .check-up-modal__confidentiality_stomatology')
-  const infoBlock = document.querySelector('.rec-modal__info-block')
+  const infoBlock = document.querySelector('.rec-modal_stomatology .rec-modal__info-block')
   const btnBack = document.querySelector('.rec-modal_stomatology .rec-modal__btn-back_stomatology')
   const logo = document.querySelector('.rec-modal_stomatology .rec-modal__icon-wrapper_stomatology')
   const successText = document.querySelector('.rec-modal_stomatology .rec-modal__success-text')

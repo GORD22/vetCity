@@ -1,225 +1,235 @@
 .card-diagnostics {
-	max-width: 29rem;
-	width: 100%;
-	height: auto;
+  max-width: 29rem;
+  width: 100%;
+  height: auto;
 
-	border-radius: 2.5rem;
-	border: 1px solid #025bff;
+  border-radius: 2.5rem;
+  border: 1px solid #025bff;
 
-	padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem;
 
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-	box-sizing: border-box;
+  box-sizing: border-box;
 
-	@include tablet {
-		max-width: 19.75rem;
+  @include tablet {
+    max-width: 19.75rem;
 
-		border-radius: 2.5rem;
+    border-radius: 2.5rem;
 
-		padding: 1.875rem;
-		padding-bottom: 1.5625rem;
+    padding: 1.875rem;
+    padding-bottom: 1.5625rem;
 
-		flex-shrink: 1;
-	}
+    flex-shrink: 1;
+  }
 
-	@include super-big-desktop {
-		max-width: 347.5px;
-	}
+  @include super-big-desktop {
+    max-width: 347.5px;
+  }
 
-	&__title {
-		margin: 0;
-		margin-bottom: 2.5455em;
+  &__title {
+    margin: 0;
+    margin-bottom: 2.5455em;
 
-		max-width: 14.2222em;
+    max-width: 14.2222em;
 
-		font-size: 2.2rem;
-		font-weight: 600;
-		line-height: 1.1818em;
-		letter-spacing: -0.0227em;
-		color: var(--dark-color);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.1818em;
+    letter-spacing: -0.0227em;
+    color: var(--dark-color);
 
-		@include tablet {
-			margin-bottom: 2.1538em;
+    @include tablet {
+      margin-bottom: 2.1538em;
 
-			font-size: 1.625rem;
-			line-height: 1.2308em;
-			letter-spacing: -0.0192em;
-		}
-	}
+      font-size: 1.625rem;
+      line-height: 1.2308em;
+      letter-spacing: -0.0192em;
+    }
+  }
 
-	&__text {
-		margin: 0;
-		margin-bottom: 1.9286em;
+  &__text {
+    margin: 0;
+    margin-bottom: 1.9286em;
 
-		font-weight: 400;
-		color: var(--dark-color);
+    font-weight: 400;
+    color: var(--dark-color);
 
-		font-size: 1.4rem;
-		line-height: 1.4286em;
+    font-size: 1.4rem;
+    line-height: 1.4286em;
 
-		@include tablet {
-			font-size: 0.875rem;
-		}
+    @include tablet {
+      font-size: 0.875rem;
+    }
 
-		@include super-big-desktop {
-			max-width: 18.2857em;
-		}
-	}
+    @include super-big-desktop {
+      max-width: 18.2857em;
+    }
+  }
 
-	&__info_bottom {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
+  &__info_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-	&__price {
-		margin: 0;
+  &__price {
+    margin: 0;
 
-		font-weight: 600;
-		color: var(--dark-color);
+    font-weight: 600;
+    color: var(--dark-color);
 
-		font-size: 1.4rem;
-		line-height: 1.4286em;
+    font-size: 1.4rem;
+    line-height: 1.4286em;
 
-		@include tablet {
-			font-size: 1.125rem;
-		}
-	}
+    @include tablet {
+      font-size: 1.125rem;
+    }
+  }
 
-	&__detail {
-		display: none;
-		padding: 1.25em 1.6667em;
-		font-weight: 600;
-		letter-spacing: 0.0167em;
-		text-transform: uppercase;
+  &__detail {
+    display: none;
+    padding: 1.25em 1.6667em;
+    font-weight: 600;
+    letter-spacing: 0.0167em;
+    text-transform: uppercase;
 
-		background: linear-gradient(45deg, #0273ff 0%, #013fff 100%);
-		-webkit-background-clip: text;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+    background: linear-gradient(45deg, #0273ff 0%, #013fff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 
-		font-size: 1.2rem;
+    font-size: 1.2rem;
 
-		@include tablet {
-			font-size: 0.75rem;
-		}
-	}
+    @include tablet {
+      font-size: 0.75rem;
+    }
+  }
 }
 
 .surgery_card-diagnostics {
-	flex-shrink: 0;
+  flex-shrink: 0;
 
-	max-width: 31.6rem;
-	aspect-ratio: 316/214;
-	height: auto;
+  max-width: 31.6rem;
+  aspect-ratio: 316/214;
+  height: auto;
 
-	@include tablet {
-		max-width: 19.75rem;
-		width: 100%;
-		height: auto;
+  @include tablet {
+    max-width: 19.75rem;
+    width: 100%;
+    height: auto;
 
-		border-radius: 2.5rem;
+    border-radius: 2.5rem;
 
-		padding: 1.875rem;
-		padding-bottom: 1.5625rem;
-	}
+    padding: 1.875rem;
+    padding-bottom: 1.5625rem;
+  }
 
-	@include super-big-desktop {
-		max-width: 346px;
-		aspect-ratio: 346/214;
-	}
+  @include super-big-desktop {
+    max-width: 346px;
+    aspect-ratio: 346/214;
+  }
 
-	.card-diagnostics__title {
-		@include tablet {
-			margin-bottom: 0;
+  .card-diagnostics__title {
+    @include tablet {
+      margin-bottom: 0;
 
-			font-size: 1.125rem;
-			line-height: 1.3333em;
-		}
-	}
+      font-size: 1.125rem;
+      line-height: 1.3333em;
+    }
+  }
 
-	.card-diagnostics__detail {
-		display: inline-block;
-	}
+  .card-diagnostics__detail {
+    display: inline-block;
+  }
 }
 
 .therapy_card-diagnostics {
-	flex-shrink: 0;
+  flex-shrink: 0;
 
-	max-width: 31.6rem;
-	aspect-ratio: 316/200;
-	height: auto;
+  max-width: 31.6rem;
+  aspect-ratio: 316/200;
+  height: auto;
 
-	@include tablet {
-		max-width: 19.75rem;
-		width: 100%;
-		height: auto;
+  @include tablet {
+    max-width: 19.75rem;
+    width: 100%;
+    height: auto;
 
-		border-radius: 2.5rem;
+    border-radius: 2.5rem;
 
-		padding: 1.875rem;
-		padding-bottom: 1.5625rem;
-	}
+    padding: 1.875rem;
+    padding-bottom: 1.5625rem;
+  }
 
-	@include super-big-desktop {
-		max-width: 346px;
-		aspect-ratio: 346/200;
-	}
+  @include super-big-desktop {
+    max-width: 346px;
+    aspect-ratio: 346/200;
+  }
 
-	.card-diagnostics__title {
-		@include tablet {
-			margin-bottom: 0;
+  .card-diagnostics__title {
+    @include tablet {
+      margin-bottom: 0;
 
-			font-size: 1.125rem;
-			line-height: 1.3333em;
-		}
-	}
+      font-size: 1.125rem;
+      line-height: 1.3333em;
+    }
+  }
 
-	.card-diagnostics__detail {
-		display: inline-block;
+  .card-diagnostics__detail {
+    display: inline-block;
 
-		@include tablet {
-			display: none;
-		}
-	}
+    @include tablet {
+      display: none;
+    }
+  }
 }
 
 .stomatology_card-diagnostics {
-	flex-shrink: 0;
+  flex-shrink: 0;
 
-	max-width: 31.6rem;
-	aspect-ratio: 316/233;
-	height: auto;
+  max-width: 31.6rem;
+  height: auto;
 
-	@include tablet {
-		max-width: 19.75rem;
-		width: 100%;
-		height: auto;
+  @include tablet {
+    max-width: 19.75rem;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 316/233;
 
-		border-radius: 2.5rem;
+    border-radius: 2.5rem;
 
-		padding: 1.875rem;
-		padding-bottom: 1.5625rem;
-	}
+    padding: 1.875rem;
+    padding-bottom: 1.5625rem;
+  }
 
-	@include super-big-desktop {
-		max-width: 346px;
-		aspect-ratio: 346/233;
-	}
+  @include super-big-desktop {
+    max-width: 346px;
+    aspect-ratio: 346/233;
+  }
 
-	.card-diagnostics__title {
-		@include tablet {
-			margin-bottom: 0;
+  .card-diagnostics__title {
+    font-size: 1.8rem;
 
-			font-size: 1.125rem;
-			line-height: 1.3333em;
-		}
-	}
+    @include tablet {
+      margin-bottom: 0;
 
-	.card-diagnostics__detail {
-		display: inline-block;
-	}
+      font-size: 1.625rem;
+      line-height: 1.3333em;
+    }
+  }
+
+  .card-diagnostics__price {
+    font-size: 1.8rem;
+
+    @include tablet {
+      font-size: 1.125rem;
+    }
+  }
+
+  .card-diagnostics__detail {
+    display: inline-block;
+  }
 }

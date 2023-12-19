@@ -4,11 +4,12 @@ import { enableScroll } from "../functions/enable-scroll"
 
 (function () {
 
-  const form = document.querySelector('.check-up-modal_stomatology .check-up-modal__form')
-  const tel = document.querySelector('.check-up-modal_stomatology .check-up-modal__form #check-up-modal__tel')
-  const submit = document.querySelector('.check-up-modal_stomatology .btn-rec')
-  const btnContinue = document.querySelector('.check-up-modal_stomatology .btn-continue')
-  const placeholder = document.querySelector('.check-up-modal_stomatology .check-up-modal__placeholder-tel_rec_stomatology')
+  const form = document.querySelector('.rec-modal-dl_stomatology .check-up-modal__form')
+  const tel = document.querySelector('.rec-modal-dl_stomatology #rec-modal__tel')
+  const name = document.querySelector('.rec-modal-dl_stomatology #rec-modal__name')
+  const btnContinue = document.querySelector('.rec-modal-dl_stomatology .btn-continue')
+  const submit = document.querySelector('.rec-modal-dl_stomatology .btn-rec')
+  const placeholder = document.querySelector('.rec-modal-dl_stomatology .check-up-modal__placeholder-tel_rec_stomatology')
 
   const telRe = /[0-9]/
   const telPattern = '+ 7 (___) ___ __ __'
@@ -46,6 +47,18 @@ import { enableScroll } from "../functions/enable-scroll"
     }
   })
 
+  name?.addEventListener('blur', () => {
+    if (!name?.value) {
+      name.classList.add('field-error')
+    }
+  })
+
+  name?.addEventListener('input', () => {
+    if (name?.value) {
+      name.classList.remove('field-error')
+    }
+  })
+
   submit?.addEventListener('click', (e) => {
     if (!tel.value || tel.value.length < 11 ||
       tel.value.indexOf('_') > -1) {
@@ -54,7 +67,7 @@ import { enableScroll } from "../functions/enable-scroll"
       form?.classList.add('hidden')
       submit?.classList.add('hidden')
       successText?.classList.add('show')
-      submitWrapper?.classList.add('hidden')
+      btnOk?.classList.add('show')
       btnBack?.classList.add('hidden')
       logo?.classList.remove('hidden')
       confidentiality?.classList.add('hidden')
@@ -71,45 +84,26 @@ import { enableScroll } from "../functions/enable-scroll"
     tel.focus()
   })
 
-  const successText = document.querySelector('.check-up-modal_stomatology .rec-modal__success-text_stomatology')
-  const btnOk = document.querySelector('.check-up-modal_stomatology .btn-ok')
-  const submitWrapper = document.querySelector('.check-up-modal_stomatology .check-up-modal__bottom')
-
-  const btnOpen = document.querySelectorAll('.stomatology_card-diagnostics .card-diagnostics__detail')
-  const btnClose = document.querySelector('.check-up-modal_stomatology .rec-modal__btn-close')
-  const overlay = document.querySelector('.check-up-modal__overlay')
-  const modal = document.querySelector('.modal-wrapper_check-up-modal')
-  const priceBlock = document.querySelector('.check-up-modal_stomatology .rec-modal__price-block')
-  const confidentiality = document.querySelector('.check-up-modal_stomatology .check-up-modal__confidentiality_stomatology')
-  const btnBack = document.querySelector('.check-up-modal_stomatology .rec-modal__btn-back_stomatology')
-  const logo = document.querySelector('.check-up-modal_stomatology .rec-modal__icon-wrapper_stomatology')
-  const infoBlock = document.querySelector('.check-up-modal__info-block')
-  const modalWrapper = document.querySelector('.modal-wrapper_check-up-modal')
+  const btnOpen = document.querySelectorAll('.card-consult__btn-rec')
+  const btnClose = document.querySelector('.rec-modal-dl_stomatology .rec-modal__btn-close')
+  const overlay = document.querySelector('.rec-modal-dl__overlay')
+  const modalWrapper = document.querySelector('.modal-wrapper_rec-modal')
+  const modal = document.querySelector('.rec-modal-dl_stomatology')
+  const priceBlock = document.querySelector('.rec-modal-dl_stomatology .rec-modal__price-block')
+  const confidentiality = document.querySelector('.rec-modal-dl_stomatology .check-up-modal__confidentiality_stomatology')
+  const infoBlock = document.querySelector('.rec-modal-dl_stomatology .rec-modal__info-block')
+  const btnBack = document.querySelector('.rec-modal-dl_stomatology .rec-modal__btn-back_stomatology')
+  const logo = document.querySelector('.rec-modal-dl_stomatology .rec-modal__icon-wrapper_stomatology')
+  const successText = document.querySelector('.rec-modal-dl_stomatology .rec-modal__success-text')
+  const btnOk = document.querySelector('.rec-modal-dl .btn-ok')
 
   for (let i = 0; i < btnOpen?.length; i++) {
     btnOpen[i]?.addEventListener('click', () => {
-      modal.classList.add('modal-wrapper_show')
+      modalWrapper.classList.add('modal-wrapper_show')
       disableScroll()
+      modal.style = `max-height: ${modal.offsetHeight}px; height: 100%;`
     })
   }
-
-  overlay?.addEventListener('click', () => {
-    modalWrapper.classList.remove('modal-wrapper_show')
-    enableScroll()
-    infoBlock?.classList.remove('hidden')
-    btnContinue?.classList.remove('hidden')
-    form?.classList.add('hidden')
-    submit?.classList.add('hidden')
-    btnBack?.classList.add('hidden')
-    logo?.classList.remove('hidden')
-    confidentiality?.classList.add('hidden')
-    priceBlock?.classList.remove('hidden')
-    submitWrapper?.classList.remove('hidden')
-    successText?.classList.remove('show')
-    btnOk?.classList.remove('show')
-    modal.style.removeProperty('max-height')
-    modal.style.removeProperty('height')
-  })
 
   btnContinue?.addEventListener('click', () => {
     infoBlock?.classList.add('hidden')
@@ -119,6 +113,11 @@ import { enableScroll } from "../functions/enable-scroll"
     btnBack?.classList.remove('hidden')
     logo?.classList.add('hidden')
     confidentiality?.classList.remove('hidden')
+    if (window.innerWidth > 1016) {
+      modal.style = `max-height: 100vh`
+    } else {
+      modal.style = `max-height: 100vh`
+    }
   })
 
   btnClose?.addEventListener('click', () => {
@@ -131,7 +130,6 @@ import { enableScroll } from "../functions/enable-scroll"
     btnBack?.classList.add('hidden')
     logo?.classList.remove('hidden')
     confidentiality?.classList.add('hidden')
-    submitWrapper?.classList.remove('hidden')
     priceBlock?.classList.remove('hidden')
     successText?.classList.remove('show')
     btnOk?.classList.remove('show')
@@ -153,8 +151,25 @@ import { enableScroll } from "../functions/enable-scroll"
     modal.style.removeProperty('height')
   })
 
+  overlay?.addEventListener('click', () => {
+    modalWrapper.classList.remove('modal-wrapper_show')
+    enableScroll()
+    infoBlock?.classList.remove('hidden')
+    btnContinue?.classList.remove('hidden')
+    form?.classList.add('hidden')
+    submit?.classList.add('hidden')
+    btnBack?.classList.add('hidden')
+    logo?.classList.remove('hidden')
+    confidentiality?.classList.add('hidden')
+    priceBlock?.classList.remove('hidden')
+    successText?.classList.remove('show')
+    btnOk?.classList.remove('show')
+    modal.style.removeProperty('max-height')
+    modal.style.removeProperty('height')
+  })
+
   btnOk?.addEventListener('click', () => {
-    modal.classList.remove('modal-wrapper_show')
+    modalWrapper.classList.remove('modal-wrapper_show')
     enableScroll()
   })
 })()
