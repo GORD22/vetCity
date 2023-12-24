@@ -601,7 +601,7 @@ a {
 .card-doc_new {
   -webkit-user-select: none;
   -moz-user-select: none;
-       user-select: none;
+  user-select: none;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -3335,16 +3335,6 @@ a {
   }
 }
 
-.title-section-cardiology {
-  width: 100%;
-  min-width: 500px;
-  font-size: 2.1rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 111.111%;
-  letter-spacing: -1.08px;
-}
-
 .doctors-section {
   overflow: hidden;
   padding-left: 0;
@@ -4093,7 +4083,7 @@ a {
 }
 @media (min-width: 1566px) {
   .methods-swiper .advantages-slide {
-    max-width: 347.5px;
+    max-width: 345px;
   }
 }
 .methods__blue-container {
@@ -4612,10 +4602,10 @@ a {
 
 .rec-section {
   border-radius: 3.5rem;
-  background-image: url(/img/rec-section-bg.png);
+  background-image: url(../img/rec-section-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0 170px;
   padding-top: 12.3rem;
   padding-bottom: 19.2rem;
 }
@@ -4644,7 +4634,7 @@ a {
   height: 100%;
   border-radius: 4rem;
   background-color: var(--light-color);
-  background-image: url(/img/vetcity.png);
+  background-image: url(../img/vetcity.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -5735,9 +5725,9 @@ a {
   top: 48%;
   left: 0;
   transform: translate(0, -50%);
-  max-width: 0.625rem;
+  max-width: 5px;
   width: 100%;
-  max-height: 0.625rem;
+  max-height: 5px;
   height: 100%;
   border-radius: 50%;
   border: 2px solid #0142ff;
@@ -6267,7 +6257,7 @@ a {
     flex-direction: row;
     justify-content: right;
     border-radius: 2.1875em;
-    background-image: url(/img/cardoligy_rehabilitation-section-bg.png);
+    background-image: url(../img/cardiolgy-dog.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

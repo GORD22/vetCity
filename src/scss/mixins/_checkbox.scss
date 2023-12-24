@@ -2,6 +2,7 @@
 
 @mixin custom-checkbox {
   position: relative;
+  cursor: pointer;
 
   &__field {
     appearance: none;
@@ -53,4 +54,59 @@
 .custom-checkbox__field:disabled + .custom-checkbox__content {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.custom-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+  color: #000;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+    &:checked ~ .checkmark {
+      background-color: #2196F3;
+      border-color: #2196F3;
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FFF;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 7px;
+      top: 3px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+    &.error {
+      border-color: #D74C4CFF;
+    }
+  }
 }

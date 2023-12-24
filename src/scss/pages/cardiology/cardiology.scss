@@ -1,0 +1,497 @@
+/* Cardiology */
+
+.about-section__swiper .swiper-pagination {
+  position: absolute;
+  left: auto;
+  right: 2.5rem;
+  top: 2.5rem;
+  width: max-content;
+  height: max-content;
+}
+
+.docs-contact-block__item.cardiology::before {
+  content: "•";
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+.small .card-diagnostics.cardiology {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #025bff;
+  border-radius: 2.5rem;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  height: 390px;
+  max-width: 29rem;
+  box-sizing: border-box;
+
+  @media (max-width: 1016px) {
+    height: auto;
+  }
+}
+
+@media (min-width: 1566px) {
+  .card-diagnostics.cardiology {
+    max-width: 345px;
+  }
+}
+
+.cardiology .card-diagnostics__title {
+  margin: 0;
+  margin-bottom: 12px;
+  max-width: 14.2222em;
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.1818em;
+  letter-spacing: -0.0227em;
+  color: var(--dark-color);
+}
+
+@media (min-width: 1016px) {
+  .cardiology .card-diagnostics__title {
+    margin-bottom: 12px;
+    font-size: 1.625rem;
+    line-height: 1.2308em;
+    letter-spacing: -0.0192em;
+  }
+}
+
+@media (min-width: 1566px) {
+  .card-diagnostics__text {
+    max-width: max-content;
+  }
+}
+
+.card-diagnostics__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.cardiology-docs-contact-block__list {
+  max-width: 600px;
+}
+
+.cardiology-checkbox-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  gap: 10px;
+}
+
+.cardiology-checkbox-block input {
+  width: 20px;
+  height: 20px;
+}
+
+.cardiology-docs-contact-block__filed-wrapper {
+  margin-bottom: 0;
+}
+
+.how-performed-section__info_cardiology {
+  padding: 2.5rem 2.5rem 0;
+  width: 100%;
+
+  .how-performed-section__info-title {
+    max-width: 716px;
+    font-size: 26px;
+
+    @media (min-width: (768px)) {
+      font-size: 36px;
+    }
+  }
+
+  .how-performed-section__list {
+    padding: 0;
+
+    .preoperative-section__item {
+      max-width: 300px;
+      font-size: 14px;
+      line-height: 20px;
+
+      @media (min-width: (576px)) {
+        max-width: max-content;
+      }
+    }
+  }
+
+  @media (min-width: (1016px)) {
+    padding: 0;
+    width: 100%;
+    max-width: 716px;
+  }
+}
+
+.how-performed-section__swiper_cardiology {
+  width: 700px;
+  height: 372px;
+  aspect-ratio: 700/372;
+  border-radius: 0 2.5rem 2.5rem 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .how-performed-section__swiper_cardiology {
+    width: 100%;
+    height: 400px;
+    aspect-ratio: 700/400;
+    border-radius: 2.5rem 2.5rem 2.5rem 0;
+  }
+}
+
+.rehabilitation-section__title.cardiology {
+  max-width: 100%;
+}
+
+.rehabilitation-section__descr.cardiology {
+  max-width: 500px;
+}
+
+.rehabilitation-section__price-block.cardiology {
+  justify-content: flex-start;
+
+  .docs-contact-block__confidentiality {
+    margin-left: 26px;
+  }
+
+  .card-consult__doc-icon {
+    position: relative;
+
+    &:nth-child(2) {
+      left: -18px;
+    }
+
+    &:nth-child(3) {
+      left: -36px;
+      margin-right: -36px;
+    }
+  }
+
+  .docs-contact-block__btn-sub {
+    top: 1px;
+  }
+
+  @media (max-width: 1016px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 1.5rem;
+
+    .docs-contact-block__confidentiality {
+      margin-left: 12px;
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    .rehabilitation-section__rec-block {
+      width: 100%;
+
+      button {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.docs-contact-block__filed.gray-border {
+  border: 1px solid #c2c2c2;
+}
+
+.cardiology-reviews-section {
+  display: flex;
+  padding-left: 2.9375rem;
+
+  @media (max-width: 1016px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.about-section__top.cardiology {
+  max-height: max-content;
+}
+
+@media (min-width: 1566px) {
+  .about-section__top.cardiology {
+    max-height: 372px;
+  }
+}
+
+@media (min-width: 1016px) {
+  .about-section__top.cardiology {
+    flex-direction: row;
+    overflow: hidden;
+    margin-bottom: 3.5rem;
+    border-radius: 2.5rem;
+    background-color: var(--smoky-white-color);
+    gap: 0;
+  }
+}
+
+@media (min-width: 1566px) {
+  .about-section__info-block.cardiology {
+    max-width: 738px;
+  }
+}
+
+.about-section__detail-text.detail-text_cardiology {
+  margin: 0;
+  max-width: 600px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: var(--dark-color);
+}
+
+.title-section-cardiology {
+  width: 100%;
+  min-width: auto;
+  max-width: 600px;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: -0.52px;
+}
+
+@media (min-width: (768px)) {
+  .title-section-cardiology {
+    font-size: 26px;
+    line-height: 111.111%;
+    letter-spacing: -1.08px;
+  }
+}
+
+.diagnostics-section__content.small {
+  @media (max-width: 1016px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.section.diagnostics-section .diagnostics-section__content {
+  @media (max-width: 1016px) {
+    bottom: 0;
+  }
+}
+
+.rehabilitation-section__cardiology2 {
+  .rehabilitation-section__price-block {
+    .preoperative-section__list .preoperative-section__item {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @media (max-width: 1016px) {
+      border: none;
+      padding: 0;
+      row-gap: 0;
+    }
+  }
+
+  .diagnostics-section__info {
+    button {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1016px) {
+    padding: 40px 0;
+  }
+}
+
+.diagnostics-section__info.cardiology.small {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  width: 50%;
+  height: 390px;
+
+  .diagnostics-section__info-title {
+    margin-bottom: 24px;
+  }
+
+  .diagnostics-section__info-text {
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.4286em;
+    color: var(--dark-color);
+  }
+
+  .gap-wrap {
+    margin-top: 32px;
+  }
+
+  .diagnostics-section__info-btn {
+    display: none;
+    align-self: flex-start;
+    margin: auto 0 0;
+
+    @media (min-width: (1016px)) {
+      display: block;
+    }
+  }
+
+  &.big .diagnostics-section__info-text,
+  &.big .preoperative-section__list {
+    max-width: 585px;
+  }
+
+  @media (max-width: 1016px) {
+    margin-bottom: 20px;
+    width: 100%;
+    height: max-content;
+  }
+
+  @media (min-width: 1016px) {
+    .diagnostics-section__info-title {
+      font-size: 2.25rem;
+      line-height: 1.1111em;
+      letter-spacing: -0.0139em;
+    }
+  }
+
+  @media (min-width: 1016px) {
+    .diagnostics-section__info-text {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.diagnostics-section__img-wrapper.cardio-image {
+  height: 676px;
+  min-height: 100%;
+  aspect-ratio: 700/676;
+
+  @media (max-width: 1016px) {
+    display: none;
+  }
+}
+
+@media (min-width: 1566px) {
+  .diagnostics-section__info.cardiology.small {
+    max-width: 347px;
+  }
+
+  .diagnostics-section__info.cardiology.big {
+    height: 100%;
+    max-width: 714px;
+  }
+}
+
+.diagnostics-section__info.cardiology.big {
+  .preoperative-section__item,
+  .how-performed-section__gray-block-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.diagnostics-section__swiper.cardiology {
+  padding: 0;
+}
+
+.card-doc_new.cardiology {
+  position: relative;
+  display: flex;
+  align-items: end;
+  overflow: hidden;
+  border-radius: 2.8rem;
+  padding: 0.8rem;
+  width: 100%;
+  height: 500px;
+  max-width: 315px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  aspect-ratio: 290/500;
+}
+
+@media (min-width: (768px)) {
+  .docs-small-block.cardiology {
+    max-width: 345px;
+  }
+}
+
+.docs-small-block.cardiology {
+  padding: 20px;
+  max-width: 315px;
+
+  .docs-small-block__list::before {
+    max-width: 230px;
+  }
+
+  .docs-contact-block__item::before {
+    content: "•";
+  }
+
+  .btn-reset_new.docs-small-block__btn {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1016px) {
+  .rehabilitation-section__cardiology {
+    flex-direction: row;
+    justify-content: right;
+    border-radius: 3.75rem;
+    padding-top: 5rem;
+    padding-right: 2.9375em;
+    padding-bottom: 5rem;
+    background-image: url(../img/cardiolgy-dog.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1016px) {
+  .rehabilitation-section__cardiology2 {
+    flex-direction: row;
+    justify-content: left;
+    border-radius: 3.75rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2.9375em;
+    background-image: url(../img/cardoligy_rehabilitation-section-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.preoperative-section__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  border: 2px solid #0142ff;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 5px;
+  max-height: 5px;
+  transform: translate(0, -50%);
+}
+
+.rehabilitation-section__title.cardiology {
+  width: 100%;
+  max-width: 100%;
+}
+
+.swiper.cardiology-reviews-section__swiper {
+  @media (max-width: 1016px) {
+    padding: 0;
+  }
+}
