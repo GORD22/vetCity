@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+	@include('partials/head.html')
+
+	<body class="page__body">
+		<div class="site-container">
+			@include('partials/header.html')
+			<main class="main container_new">
+				@include('partials/neurology/neurology_main-header.html')
+				@include('partials/neurology/neurology_about-section.html')
+				@include('partials/neurology/neurology_doctors-section.html')
+				@include('partials/neurology/neurology_directions-section.html')
+				@include('partials/neurology/neurology_preoperative-section.html')
+				@include('partials/neurology/neurology_rehabilitation-section.html')
+				@include('partials/neurology/neurology_reviews-section.html')
+				@include('partials/neurology/neurology_check-up-section.html')
+        @include('partials/neurology/neurology_top-section.html')
+				@include('partials/neurology/neurology_how-performed-section.html')
+				@include('partials/neurology/neurology_services-section.html')
+				@include('partials/rec-section.html') @include('partials/footer.html')
+			</main>
+		</div>
+
+    <div class="modal-wrapper modal-wrapper_review-modal">
+      <div class="overlay review-modal__overlay"></div>
+      <div class="info-modal review-modal">
+        <div class="modal-container">
+          <div class="rec-modal-dl__header-top">
+            <p class="rec-modal-dl__title">
+              Отзыв
+            </p>
+            <button class="btn-reset_new rec-modal__btn-close">
+              <svg>
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+          <p class="rec-modal__text_stomatology">
+            Доктор Кейдунов, выше всяких похвал.обращаемся не в первый раз, очень довольны, выражаем глубочайшую
+            признательность, за проведённые процедуры с нашими собачками. Мы очень волновались, собачки у нас мини
+            чихуахуа, одна из них щенок, но мы зря переживали. Доктор высочайшего класса! При этом чуткий и добрый
+            человек, как к питомцам, так и к их владельцам. Редкое сочетание высокого профессионала и замечательного
+            человека.
+          </p>
+        </div>
+      </div>
+    </div>
+
+		<div class="modal-wrapper modal-wrapper_rec-modal">
+			<div class="overlay rec-modal__overlay"></div>
+			<div class="rec-modal">
+				<div class="modal-container">
+					<div class="rec-modal__top">
+						<div class="rec-modal__top-left">
+							<div class="rec-modal__icon-wrapper">
+								<img src="img/doc-icon-1.png" alt="" />
+							</div>
+							<p class="rec-modal__title">Романова<br />Светлана Евгеньевна</p>
+							<p class="rec-modal__subtitle">
+								Заведующая отделением онкологии в Vetcity Clinic
+							</p>
+						</div>
+						<button class="btn-reset_new rec-modal__btn-close">
+							<svg>
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="rec-modal__info-block">
+						<div class="rec-modal__descr">
+							<p class="rec-modal__text">
+								В 2014 году окончила Московскую государственную академию
+								ветеринарной медицины и биотехнологии им. К.И. Скрябина. С 2012
+								года начала работать ассистентом ветеринарного врача отделения
+								онкологии. С 2016 года практикующий врач-онколог, химиотерапевт.
+							</p>
+							<p class="rec-modal__text">
+								Регулярно принимаю участие в ветеринарных конгрессах и
+								конференциях, ведь онкология – это быстро развивающаяся
+								специализация и нужно ей соответствовать. Дома у меня живет
+								активный и жизнерадостный джек-рассел-терьер по кличке Даша.
+							</p>
+						</div>
+						<q class="rec-modal__quotation">
+							<img src="img/svg/quot.svg" alt="" />
+							<span
+								>Мое профессиональное кредо – животные не должны испытывать
+								страдание.</span
+							>
+						</q>
+					</div>
+					<form action="" class="check-up-modal__form rec-modal__form hidden">
+						<input
+							id="rec-modal__name"
+							type="text"
+							placeholder="Имя"
+							class="input-reset check-up-modal__field"
+						/>
+						<div class="check-up-modal__field-wrapper">
+							<input
+								id="rec-modal__tel"
+								type="tel"
+								class="input-reset check-up-modal__field"
+							/>
+							<p
+								class="check-up-modal__field-placeholder check-up-modal__placeholder-tel check-up-modal__placeholder-tel_rec"
+							>
+								<span>+7</span> (999) 999-99-99
+							</p>
+						</div>
+						<textarea
+							placeholder="Комментарий"
+							class="input-reset check-up-modal__field check-up-modal__textarea"
+						></textarea>
+						<div class="rec-modal__radio-group">
+							<div class="rec-modal__radio-wrapper">
+								<input
+									id="rec-modal-radio-1"
+									name="rec-modal-radio"
+									type="radio"
+									class="input-reset rec-modal__radio"
+									checked="checked"
+								/>
+								<label for="rec-modal-radio-1" title="В клинике"
+									>В клинике</label
+								>
+							</div>
+							<div class="rec-modal__radio-wrapper">
+								<input
+									id="rec-modal-radio-2"
+									name="rec-modal-radio"
+									type="radio"
+									class="input-reset rec-modal__radio"
+								/>
+								<label for="rec-modal-radio-2" title="Онлайн">Онлайн</label>
+							</div>
+						</div>
+					</form>
+					<p class="rec-modal__success-text">
+						Спасибо! Мы уже получили вашу заявку. Менеджер свяжется с вами в
+						течение 30 минут, чтобы подобрать удобное время приёма.
+					</p>
+					<div class="rec-modal__bottom">
+						<div class="rec-modal__bottom-left">
+							<button class="btn-reset_new btn-blue_new btn-continue">
+								Записаться
+							</button>
+							<button
+								class="btn-reset_new btn-blue_new btn-disabled btn-rec hidden"
+							>
+								Записаться
+							</button>
+							<button class="btn-reset_new btn-blue_new btn-ok">ок</button>
+							<div class="rec-modal__price-block">
+								<span class="rec-modal__price-text">Стоимость приёма</span>
+								<span class="rec-modal__price">5 000 ₽</span>
+							</div>
+						</div>
+						<img class="rec-modal__logo" src="img/small-logo.png" alt="logo" />
+						<p class="check-up-modal__confidentiality hidden">
+							Нажимая на кнопку «Записаться», вы соглашaетесь с
+							<a href="" class="a">политикой конфиденциальности.</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-wrapper modal-wrapper_check-up-modal">
+			<div class="overlay check-up-modal__overlay"></div>
+			<div id="surgery_check-up-modal" class="check-up-modal">
+				<div class="modal-container">
+					<div class="rec-modal__top">
+						<div class="rec-modal__top-left">
+							<p class="rec-modal__title">
+								Check-up<br />предоперационный для кошек до 6 лет
+							</p>
+							<p class="rec-modal__subtitle">
+								Проводится за один визит в клинику
+							</p>
+						</div>
+						<button class="btn-reset_new rec-modal__btn-close">
+							<svg>
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="check-up-modal__info-block">
+						<ol class="check-up-modal__decr-list">
+							<li class="check-up-modal__descr-item">Приём анестезиолога</li>
+							<li class="check-up-modal__descr-item">Забор крови</li>
+							<li class="check-up-modal__descr-item">ОКА скрининг</li>
+							<li class="check-up-modal__descr-item">
+								Б/Х 1 профиль (8 показателей)
+							</li>
+							<li class="check-up-modal__descr-item">ЭХО скрининг</li>
+							<li class="check-up-modal__descr-item">ЭКГ</li>
+						</ol>
+					</div>
+					<form action="" class="check-up-modal__form rec-modal__form hidden">
+						<input
+							id="rec-modal__name"
+							type="tel"
+							placeholder="Имя"
+							class="input-reset check-up-modal__field"
+						/>
+						<div class="check-up-modal__field-wrapper">
+							<input
+								id="check-up-modal__tel"
+								type="text"
+								class="input-reset check-up-modal__field"
+							/>
+							<p
+								class="check-up-modal__field-placeholder check-up-modal__placeholder-tel check-up-modal__placeholder-tel_rec"
+							>
+								<span>+7</span> (999) 999-99-99
+							</p>
+						</div>
+						<textarea
+							placeholder="Комментарий"
+							class="input-reset check-up-modal__field check-up-modal__textarea"
+						></textarea>
+					</form>
+					<p class="rec-modal__success-text">
+						Спасибо! Мы уже получили вашу заявку. Менеджер свяжется с вами в
+						течение 30 минут, чтобы подобрать удобное время приёма.
+					</p>
+					<div class="rec-modal__bottom check-up-modal__bottom">
+						<div class="rec-modal__bottom-left">
+							<button class="btn-reset_new btn-blue_new btn-continue">
+								Записаться
+							</button>
+							<button
+								class="btn-reset_new btn-blue_new btn-disabled btn-rec hidden"
+							>
+								Записаться
+							</button>
+							<button class="btn-reset_new btn-blue_new btn-ok">ок</button>
+							<div class="rec-modal__price-block">
+								<span class="rec-modal__price-text">Стоимость услуги</span>
+								<span class="rec-modal__price">5 000 ₽</span>
+							</div>
+						</div>
+						<img class="rec-modal__logo" src="img/small-logo.png" alt="logo" />
+						<p class="check-up-modal__confidentiality hidden">
+							Нажимая на кнопку «Записаться», вы соглашaетесь с
+							<a href="" class="a">политикой конфиденциальности.</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-wrapper modal-wrapper_rec-modal-dl">
+			<div class="overlay rec-modal-dl__overlay"></div>
+			<div class="rec-modal-dl">
+				<div class="modal-container">
+					<div class="rec-modal-dl__header">
+						<div class="rec-modal-dl__header-top">
+							<p class="rec-modal-dl__title">Запись на приём</p>
+							<button class="btn-reset_new rec-modal__btn-close">
+								<svg>
+									<use xlink:href="img/sprite.svg#close"></use>
+								</svg>
+							</button>
+						</div>
+						<div class="rec-modal-dl__header-bottom">
+							<p class="rec-modal-dl__doc-block-title">Ветеринарный врач:</p>
+							<div class="rec-modal-dl__doc-block">
+								<div class="rec-modal-dl__icon-wrapper">
+									<img src="img/doc-icon-1.png" alt="" />
+								</div>
+								<div class="rec-modal-dl__doc-name">
+									<p class="rec-modal-dl__doc-title">
+										Романова Светлана Евгеньевна
+									</p>
+									<p class="rec-modal-dl__doc-subtitle">
+										Заведующая отделением онкологии в Vetcity Clinic
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form action="" class="check-up-modal__form rec-modal__form">
+						<input
+							id="rec-modal__name"
+							type="text"
+							placeholder="Имя"
+							class="input-reset check-up-modal__field"
+						/>
+						<div class="check-up-modal__field-wrapper">
+							<input
+								id="rec-modal-dl__tel"
+								type="tel"
+								class="input-reset check-up-modal__field"
+							/>
+							<p
+								class="check-up-modal__field-placeholder check-up-modal__placeholder-tel check-up-modal__placeholder-tel_rec"
+							>
+								<span>+7</span> (999) 999-99-99
+							</p>
+						</div>
+						<textarea
+							placeholder="Комментарий"
+							class="input-reset check-up-modal__field check-up-modal__textarea"
+						></textarea>
+						<div class="rec-modal__radio-group">
+							<div class="rec-modal__radio-wrapper">
+								<input
+									id="rec-modal-radio-1"
+									name="rec-modal-radio"
+									type="radio"
+									class="input-reset rec-modal__radio"
+									checked="checked"
+								/>
+								<label for="rec-modal-radio-1" title="В клинике"
+									>В клинике</label
+								>
+							</div>
+							<div class="rec-modal__radio-wrapper">
+								<input
+									id="rec-modal-radio-2"
+									name="rec-modal-radio"
+									type="radio"
+									class="input-reset rec-modal__radio"
+								/>
+								<label for="rec-modal-radio-2" title="Онлайн">Онлайн</label>
+							</div>
+						</div>
+					</form>
+					<p class="rec-modal__success-text">
+						Спасибо! Мы уже получили вашу заявку. Менеджер свяжется с вами в
+						течение 30 минут, чтобы подобрать удобное время приёма.
+					</p>
+					<div class="rec-modal__bottom">
+						<div class="rec-modal__bottom-left">
+							<button class="btn-reset_new btn-blue_new btn-disabled btn-rec">
+								Записаться
+							</button>
+							<button class="btn-reset_new btn-blue_new btn-ok">ок</button>
+							<div class="rec-modal__price-block">
+								<span class="rec-modal__price-text">Стоимость приёма</span>
+								<span class="rec-modal__price">5 000 ₽</span>
+							</div>
+						</div>
+						<img class="rec-modal__logo" src="img/small-logo.png" alt="logo" />
+						<p class="check-up-modal__confidentiality hidden">
+							Нажимая на кнопку «Записаться», вы соглашaетесь с
+							<a href="" class="a">политикой конфиденциальности.</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-wrapper modal-wrapper_online-consult-suitable-modal">
+			<div class="overlay online-consult-suitable-modal__overlay"></div>
+			<div class="online-consult-suitable-modal">
+				<div class="modal-container">
+					<div class="online-consult-suitable-modal__top">
+						<p class="online-consult-suitable-modal__title">
+							Кому подходит онлайн-консультация
+						</p>
+						<button class="btn-reset_new check-up-modal__btn-close">
+							<svg>
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+					<ul class="list-reset online-consult-suitable-modal__list">
+						<li class="online-consult-suitable-modal__item">
+							Пациентам из сторонней клиники с результатами анализов / диагнозом
+							– для получения альтернативного мнения эксперта по диагнозу и
+							оптимальной схеме лечения питомца.
+						</li>
+						<li class="online-consult-suitable-modal__item">
+							Пациентам из других городов – для уточнения сроков пребывания в
+							клинике, организации поездки с животным, подготовки к очному
+							приему (например, выполнить часть исследований по месту
+							жительства, скорректировать текущие назначения).
+						</li>
+						<li class="online-consult-suitable-modal__item">
+							Пациентам для получения дополнительной консультации по результатам
+							исследований, выполненных после очного приема онколога (например,
+							для консультации по результатам гистологического исследования,
+							иммуногистохимического исследования, анализов крови).
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal-wrapper modal-wrapper_info-modal">
+			<div class="overlay info-modal__overlay"></div>
+			<div class="info-modal">
+				<div class="info-modal__modal-container">
+					<div class="check-up-modal__top">
+						<p class="check-up-modal__title">Внутрибрюшная химиотерапия</p>
+						<button class="btn-reset_new rec-modal__btn-close">
+							<svg>
+								<use xlink:href="img/sprite.svg#close"></use>
+							</svg>
+						</button>
+					</div>
+					<div class="info-modal__text-block">
+						<p>
+							Лечение злокачественных новообразование с помощью препаратов,
+							которые уничтожают раковые клетки и подавляют их рост.
+							Врач-онколог проводит повторную консультацию, оценивает общее
+							состояние и результаты анализов питомца, принимает решение о
+							возможности и необходимости проведения химиотерапии. Проводится
+							рассчет дозы и внутрибрюшинное введение препарата.
+						</p>
+						<p>
+							В стоимость услуги включена сама процедура химиотерапии, расходные
+							материалы, наблюдение в стационаре клиники длительностью до 12
+							часов. Отдельно оплачивается стоимость препарата и анестезия для
+							процедуры (при необходимости).
+						</p>
+					</div>
+					<div class="info-modal__bottom">
+						<span>8 000 ₽</span>
+						<p>Запись проводится только через врача-онколога.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
