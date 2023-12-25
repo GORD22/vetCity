@@ -368,7 +368,7 @@
 }
 
 .hidden-with-animate-opac {
-  display: none;
+  display: none !important;
   animation: hidden-by-opacity 0.5s;
 }
 
