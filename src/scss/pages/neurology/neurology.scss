@@ -5,11 +5,25 @@
     overflow: hidden;
   }
   .top-section_right-part_list_title{
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    text-align: left;
     margin: 0;
   }
   .top-section_right-part{
     background-color: #F1F4F8;
     flex-shrink: 1;
+    position: relative;
+  }
+  .top-section_right-part_logo{
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    right: 45px;
+    bottom: 45px;
   }
   .top-section_right-part_list_full{
     display: flex;
@@ -30,12 +44,21 @@
     max-width: 50%;
   }
   .top-section_right-part_list_item{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
     margin-top: 8px;
     &::marker{
       color: #0142ff;
     }
   }
-@media (max-width: 800px){
+@media (max-width: 1050px){
+  .top-section_right-part_logo{
+    display: none;
+  }
   .top-section_full-block{
     flex-direction: column;
     margin: 0;
@@ -53,6 +76,14 @@
 
 .neurology_diagnostics-section {
   display: flex;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+  margin-bottom: 5.4rem;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-direction: row;
 }
   .diagnostics-section__img-wrapper.cardio-image{
     height: 710px;
@@ -69,6 +100,7 @@
     gap: 12px;
   }
     .diagnostics-section_services_item_title{
+      font-family: Inter;
       font-size: 26px;
       font-weight: 600;
       line-height: 30px;
@@ -78,6 +110,22 @@
     }
     .diagnostics-section__info-title_mobile{
       display: none;
+      font-family: Inter;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 30px;
+      letter-spacing: -0.02em;
+      text-align: left;
+
+    }
+    .diagnostics-section_services_item_desc{
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: left;
+
     }
     .diagnostics-section_services_item_price{
       background-color: #E3E9F0;
@@ -85,6 +133,7 @@
       padding: 4px 12px;
       display: flex;
       align-items: center;
+      font-family: Inter;
       font-size: 14px;
       font-weight: 400;
       line-height: 20px;
@@ -98,21 +147,42 @@
     margin: 24px 0;
     color: #0142ff;
   }
-  .rehabilitation-section__neurology{
-      flex-direction: row;
-      justify-content: right;
-      border-radius: 3.75rem;
-      padding-top: 5rem;
-      padding-right: 2.9375em;
-      padding-bottom: 5rem;
-      background-image: url(../img/neurology/rehabilitation/neurology-cat.png);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+    .neurology_diagnostics-section__info-title{
+      font-family: Inter;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 40px;
+      letter-spacing: -0.03em;
+      text-align: left;
+      margin: 0 0 32px 0;
+    }
+    .diagnostics-section__info-text{
+      min-height: 120px;
     }
 @media (max-width: 800px){
-  .diagnostics-section__info-title{
+  .neurology_diagnostics-section {
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    flex-direction: column;
+  }
+  .neurology_diagnostics-section__info-title{
     display: none;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    text-align: left;
+  }
+  .diagnostics-section__info-text{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
   }
   .diagnostics-section__info-title_mobile{
     display: block;
@@ -128,3 +198,74 @@
     order: -2;
   }
 }
+.rehabilitation-section__neurology{
+  flex-direction: row;
+  justify-content: right;
+  border-radius: 3.75rem;
+  padding-top: 5rem;
+  padding-right: 2.9375em;
+  padding-bottom: 5rem;
+  background-image: url(/img/neurology/rehabilitation/neurology-cat.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.neurology_diagnostics-section__info{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 740px;
+  margin: 40px 25px;
+}
+.neurology_diagnostics-section__img-wrapper {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  max-width: 44.75rem;
+  width: 50%;
+  height: auto;
+  border-radius: 28px;
+}
+.neurology_preoperative-section__video-block__new{
+  position: relative;
+  overflow: hidden;
+  border-radius: 2.5rem;
+  max-width: 44.75rem;
+  height: auto;
+}
+@media (max-width: 800px){
+  .neurology_diagnostics-section__info{
+    width: auto;
+  }
+  .diagnostics-section{
+  padding-top: 0;
+  }
+  .neurology_preoperative-section__video-block__new{
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .neurology_diagnostics-section__img-wrapper{
+    max-width: 100%;
+    display: flex;
+    order: -2;
+    overflow: inherit;
+    width: 100%;
+  }
+  .neurology_preoperative-section__video{
+    width: 100%;
+    aspect-ratio: 365/225;
+    background-color: black;
+  }
+  .diagnostics-section__info{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 5.4rem;
+  }
+  .diagnostics-section__info-title_mobile{
+    margin: 0 0 24px 0;
+  }
+}
+
