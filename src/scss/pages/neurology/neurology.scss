@@ -1,0 +1,130 @@
+.top-section_full-block{
+    display: flex;
+    margin: 0 48px;
+    border-radius: 2.5rem;
+    overflow: hidden;
+  }
+  .top-section_right-part_list_title{
+    margin: 0;
+  }
+  .top-section_right-part{
+    background-color: #F1F4F8;
+    flex-shrink: 1;
+  }
+  .top-section_right-part_list_full{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 32px;
+  }
+  .top-section_right-part_btn{
+    margin: 0 40px 40px;
+    width: 151px;
+    height: 50px;
+  }
+  ul.top-section_right-part_list{
+    margin: 0;
+    padding: 0 1rem;
+  }
+  .top-section_left-part-img{
+    max-width: 50%;
+  }
+  .top-section_right-part_list_item{
+    margin-top: 8px;
+    &::marker{
+      color: #0142ff;
+    }
+  }
+@media (max-width: 800px){
+  .top-section_full-block{
+    flex-direction: column;
+    margin: 0;
+  }
+  .top-section_left-part-img{
+    max-width: 100%;
+  }
+  .top-section{
+    padding: 0;
+  }
+  .top-section_right-part_list_item{
+    margin-top: 8px;
+  }
+}
+
+.neurology_diagnostics-section {
+  display: flex;
+}
+  .diagnostics-section__img-wrapper.cardio-image{
+    height: 710px;
+  }
+.diagnostics-section_services_item{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+  .diagnostics-section_services_item_top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+    .diagnostics-section_services_item_title{
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 30px;
+      letter-spacing: -0.02em;
+      text-align: left;
+      margin: 0;
+    }
+    .diagnostics-section__info-title_mobile{
+      display: none;
+    }
+    .diagnostics-section_services_item_price{
+      background-color: #E3E9F0;
+      border-radius: 60px;
+      padding: 4px 12px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+      p{
+        margin: 0;
+      }
+  hr{
+    margin: 24px 0;
+    color: #0142ff;
+  }
+  .rehabilitation-section__neurology{
+      flex-direction: row;
+      justify-content: right;
+      border-radius: 3.75rem;
+      padding-top: 5rem;
+      padding-right: 2.9375em;
+      padding-bottom: 5rem;
+      background-image: url(../img/neurology/rehabilitation/neurology-cat.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+@media (max-width: 800px){
+  .diagnostics-section__info-title{
+    display: none;
+  }
+  .diagnostics-section__info-title_mobile{
+    display: block;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+  }
+  .diagnostics-section__img-wrapper.cardio-image{
+    display: flex;
+    order: -2;
+  }
+}
