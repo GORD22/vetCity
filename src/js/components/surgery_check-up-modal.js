@@ -65,7 +65,7 @@ import { enableScroll } from "../functions/enable-scroll"
     const successText = document.querySelector('#surgery_check-up-modal .rec-modal__success-text')
     const btnOk = document.querySelector('#surgery_check-up-modal .btn-ok')
 
-    const btnOpen = document.querySelectorAll('.surgery_card-diagnostics .card-diagnostics__detail')
+    const btnOpen = document.querySelectorAll('.card-diagnostics .card-diagnostics__detail')
     const btnClose = document.querySelector('#surgery_check-up-modal .rec-modal__btn-close')
     const overlay = document.querySelector('.check-up-modal__overlay')
     const modal = document.querySelector('.modal-wrapper_check-up-modal')

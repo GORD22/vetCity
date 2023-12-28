@@ -536,6 +536,8 @@
   @media (max-width: 1016px) {
     padding: 0;
   }
+
+
 }
 .doctors-section_swiper-arrows{
   display: flex;
@@ -559,8 +561,10 @@
 .cardiology_doctors-section_swiper-next{
   position: absolute;
   right: 0;
-  top: 52%;
+  top: 42%;
   z-index: 50;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   background-color: #FFFFFF;
   width: 120px;
   height: 70px;
@@ -577,4 +581,32 @@
   @media (max-width: 1016px) {
     display: none;
   }
+}
+.cardiology_doctors-section_swiper-prev{
+  position: absolute;
+  left: 0;
+  top: 42%;
+  z-index: 50;
+
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #FFFFFF;
+  width: 120px;
+  height: 70px;
+  border-radius: 60px 0 0 60px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  img{
+    margin-left: 37px;
+    width: 7px;
+    height: 14px;
+    aspect-ratio: auto;
+  }
+
+  @media (max-width: 1016px) {
+    display: none;
+  }
+}
+.swiper-button-disabled {
+  display: none;
 }
