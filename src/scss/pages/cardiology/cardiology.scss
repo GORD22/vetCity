@@ -14,7 +14,7 @@
   font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
-  color: inherit;
+  color: #0142ff;
 }
 
 .small .card-diagnostics.cardiology {
@@ -118,6 +118,9 @@
         max-width: max-content;
       }
     }
+    .preoperative-section__item::marker{
+      color: #0142ff;
+    }
   }
 
   @media (min-width: (1016px)) {
@@ -208,7 +211,7 @@
 
 .cardiology-reviews-section {
   display: flex;
-  padding-left: 2.9375rem;
+  padding-left: 2.5rem;
 
   @media (max-width: 1016px) {
     display: flex;
@@ -399,7 +402,7 @@
   }
 }
 
-.diagnostics-section__img-wrapper.cardio-image {
+.diagnostics-section__img-wrapper .cardio-image {
   height: 676px;
   min-height: 100%;
   aspect-ratio: 700/676;
@@ -425,6 +428,13 @@
   .how-performed-section__gray-block-text {
     font-size: 14px;
     line-height: 20px;
+  }
+}
+.diagnostics-section__img-wrapper_mobile.cardio-image{
+  display: none;
+  @media (max-width: 1016px) {
+    display: flex;
+    height: 450px;
   }
 }
 
@@ -465,6 +475,7 @@
 
   .docs-contact-block__item::before {
     content: "•";
+    color: #0142ff;
   }
 
   .btn-reset_new.docs-small-block__btn {
@@ -502,19 +513,19 @@
   }
 }
 
-.preoperative-section__item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 10px;
-  border: 2px solid #0142ff;
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-  max-width: 5px;
-  max-height: 5px;
-  transform: translate(0, -50%);
-}
+// .preoperative-section__item::before {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   top: 10px;
+//   border: 2px solid #0142ff;
+//   border-radius: 50%;
+//   width: 100%;
+//   height: 100%;
+//   max-width: 5px;
+//   max-height: 5px;
+//   transform: translate(0, -50%);
+// }
 
 .rehabilitation-section__title.cardiology {
   width: 100%;
@@ -524,5 +535,24 @@
 .swiper.cardiology-reviews-section__swiper {
   @media (max-width: 1016px) {
     padding: 0;
+  }
+}
+.doctors-section_swiper-arrows{
+  display: flex;
+  justify-content: space-between;
+  margin: 3.5em 3em 1.5em;
+  @media (max-width: 1016px) {
+    display: none;
+  }
+}
+.services-section__header-img-wrapper{
+  @media (max-width: 1016px) {
+    height: 400px;
+  }
+}
+.cardiology_how-perfomed_header{
+  display: none;
+  @media (max-width: 1016px) {
+    display: block;
   }
 }

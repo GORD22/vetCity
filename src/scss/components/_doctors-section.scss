@@ -5,9 +5,10 @@
 
 	&__section-title {
 		margin: 0 auto;
-		margin-bottom: 2rem;
+		margin-bottom: 4rem;
+    white-space: nowrap;
 
-		max-width: 11.5909em;
+		// max-width: 11.5909em;
 
 		@include tablet {
 			margin: 0;
@@ -16,6 +17,17 @@
 			max-width: unset;
 		}
 	}
+
+  @media (max-width: 1016px) {
+    .doctors-section__section-title {
+      font-family: Inter;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: -0.01em;
+      text-align: center;
+    }
+}
 
 	&__doctors-swiper {
 		width: 100%;

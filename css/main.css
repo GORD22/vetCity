@@ -172,10 +172,10 @@ a {
 }
 
 .list-reset {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
+
 
 .input-reset {
   outline: none;
@@ -3352,6 +3352,7 @@ a {
     max-width: unset;
   }
 }
+
 .doctors-section__doctors-swiper {
   width: 100%;
   padding: 0 2.5rem;
@@ -4183,6 +4184,7 @@ a {
     border-radius: 2.5rem;
     background-color: var(--smoky-white-color);
     flex-direction: row;
+    max-height: 252px;
   }
 }
 .services-section__header-info {

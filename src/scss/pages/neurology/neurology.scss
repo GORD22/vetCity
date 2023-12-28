@@ -85,7 +85,7 @@
   gap: 2rem;
   flex-direction: row;
 }
-  .diagnostics-section__img-wrapper.cardio-image{
+  .diagnostics-section__img-wrapper.cardio-image.neurology{
     height: 710px;
   }
 .diagnostics-section_services_item{
@@ -193,7 +193,7 @@
     text-align: left;
 
   }
-  .diagnostics-section__img-wrapper.cardio-image{
+  .diagnostics-section__img-wrapper.cardio-image.neurology{
     display: flex;
     order: -2;
   }
