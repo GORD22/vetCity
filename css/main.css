@@ -860,6 +860,16 @@ a {
   right: 0;
   z-index: 100;
 }
+@media (max-width: 1016px) {
+  .docs-contact-block__btn-sub {
+    position: relative;
+  }
+}
+@media (max-width: 1016px) {
+  .docs-contact-block__btn-sub {
+    position: relative;
+  }
+}
 .docs-contact-block__confidentiality {
   margin: 0;
   font-size: 0.75rem;

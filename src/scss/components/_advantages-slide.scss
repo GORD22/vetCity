@@ -30,11 +30,13 @@
   &__title {
     margin: 0;
 
-    font-size: 2.2rem;
+    font-family: Inter;
+    font-size: 26px;
     font-weight: 600;
-    line-height: 1.1818em;
-    letter-spacing: -0.0091em;
-    color: var(--dark-color);
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
 
     @include tablet {
       min-height: 2.1538em;

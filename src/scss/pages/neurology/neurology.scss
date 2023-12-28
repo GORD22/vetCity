@@ -156,7 +156,7 @@
       text-align: left;
       margin: 0 0 32px 0;
     }
-    .diagnostics-section__info-text{
+    .diagnostics-section__info-text .neurology{
       min-height: 120px;
     }
 @media (max-width: 800px){
@@ -259,10 +259,9 @@
     aspect-ratio: 365/225;
     background-color: black;
   }
-  .diagnostics-section__info{
+  .diagnostics-section__info .neurology{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    padding-bottom: 5.4rem;
   }
   .diagnostics-section__info-title_mobile{
     margin: 0 0 24px 0;

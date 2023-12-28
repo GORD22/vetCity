@@ -52,7 +52,7 @@
 
   &__text {
     margin: 0;
-    margin-bottom: 1.9286em;
+    margin-bottom: 4.6rem;
 
     font-weight: 400;
     color: var(--dark-color);
@@ -73,6 +73,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 9px 0;
   }
 
   &__price {

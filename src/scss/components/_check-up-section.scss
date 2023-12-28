@@ -258,6 +258,9 @@
 .gap-wrap {
 	gap: 1.5rem;
 	margin-top: 1.5rem;
+  @media (min-width: 1016px) {
+    margin-top: 2rem;
+  }
 }
 
 .cardio-image {

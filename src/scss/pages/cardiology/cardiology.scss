@@ -23,10 +23,11 @@
   justify-content: space-between;
   border: 1px solid #025bff;
   border-radius: 2.5rem;
-  padding: 1.5rem 2rem;
+  padding: 2rem 2rem;
   width: 100%;
   height: 390px;
   max-width: 29rem;
+  min-width: 315px;
   box-sizing: border-box;
 
   @media (max-width: 1016px) {
@@ -54,9 +55,13 @@
 @media (min-width: 1016px) {
   .cardiology .card-diagnostics__title {
     margin-bottom: 12px;
-    font-size: 1.625rem;
-    line-height: 1.2308em;
-    letter-spacing: -0.0192em;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    text-align: left;
+
   }
 }
 
@@ -131,9 +136,9 @@
 }
 
 .how-performed-section__swiper_cardiology {
-  border-radius: 0 2.5rem 2.5rem 0;
+  border-radius: 2.5rem;
   width: 700px;
-  height: 372px;
+  height: 432px;
   aspect-ratio: 700/372;
 
   img {
@@ -144,7 +149,7 @@
 
 @media (max-width: 768px) {
   .how-performed-section__swiper_cardiology {
-    border-radius: 2.5rem 2.5rem 2.5rem 0;
+    border-radius: 2.5rem 2.5rem 0 0;
     width: 100%;
     height: 400px;
     aspect-ratio: 700/400;
@@ -200,6 +205,10 @@
 
       button {
         width: 100%;
+        display: block;
+        @media (max-width: 1016px) {
+            display: none;
+        }
       }
     }
   }
@@ -261,14 +270,14 @@
   min-width: auto;
   max-width: 600px;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 36px;
   line-height: 30px;
   letter-spacing: -0.52px;
 }
 
 @media (min-width: (768px)) {
   .title-section-cardiology {
-    font-size: 26px;
+    font-size: 36px;
     line-height: 111.111%;
     letter-spacing: -1.08px;
   }
@@ -321,6 +330,7 @@
 
   .diagnostics-section__info-title {
     margin-bottom: 24px;
+    margin-top: 40px;
   }
 
   .diagnostics-section__info-text {
@@ -428,6 +438,7 @@
   .how-performed-section__gray-block-text {
     font-size: 14px;
     line-height: 20px;
+    max-width: 585px;
   }
 }
 .diagnostics-section__img-wrapper_mobile.cardio-image{
@@ -435,11 +446,22 @@
   @media (max-width: 1016px) {
     display: flex;
     height: 450px;
+    border-radius: 40px;
+    overflow: hidden;
   }
 }
 
 .diagnostics-section__swiper.cardiology {
   padding: 0;
+}
+.diagnostics_section-btn{
+  display: none;
+  @media (max-width: 1016px) {
+    display: block;
+    width: 100%;
+    order: -1;
+    margin-top: 20px;
+  }
 }
 
 .card-doc_new.cardiology {
@@ -475,11 +497,28 @@
 
   .docs-contact-block__item::before {
     content: "•";
-    color: #0142ff;
   }
 
   .btn-reset_new.docs-small-block__btn {
     width: 100%;
+  }
+}
+.card-doc_new .cardiology_docs-section_heart{
+  display: none;
+  @media (max-width: 1016px) {
+    display: block;
+    width: 27.5px;
+    height: 22px;
+    position: relative;
+    bottom: -12px;
+    left: 15px;
+
+  }
+}
+.price-close{
+  display: block;
+  @media (max-width: 1016px) {
+    display: none;
   }
 }
 
@@ -512,6 +551,12 @@
     background-repeat: no-repeat;
   }
 }
+.rehabilitation-section__cardiology{
+  background-image: url(../img/cardoligy_rehabilitation-section-2.png);
+  padding: 25px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
 
 // .preoperative-section__item::before {
 //   content: "";
@@ -530,6 +575,9 @@
 .rehabilitation-section__title.cardiology {
   width: 100%;
   max-width: 100%;
+  @media (max-width: 1016px) {
+    margin-top: 30px;
+  }
 }
 
 .swiper.cardiology-reviews-section__swiper {
@@ -548,6 +596,17 @@
 .services-section__header-img-wrapper{
   @media (max-width: 1016px) {
     height: 400px;
+  }
+}
+.services-section__header-img-wrapper .cardiology_services-section_img {
+  @media (max-width: 1016px) {
+    display: none;
+  }
+}
+.services-section__header-img-wrapper .cardiology_services-section_img_mobile{
+  display: none;
+  @media (max-width: 1016px) {
+    display: block;
   }
 }
 .cardiology_how-perfomed_header{
@@ -577,4 +636,8 @@
   @media (max-width: 1016px) {
     display: none;
   }
+}
+.mobile-open{
+  display: flex;
+  flex-direction: column;
 }

@@ -36,7 +36,7 @@
 		flex-direction: column;
 
 		@include tablet {
-			height: 19.5rem;
+			height: 15.75rem;
 
 			gap: 1.25rem;
 
@@ -75,11 +75,13 @@
 		margin: 0;
 		margin-bottom: 0.7273em;
 
-		font-size: 2.2rem;
-		font-weight: 600;
-		line-height: 1.2308em;
-		letter-spacing: -0.0192em;
-		color: var(--dark-color);
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
 
 		@include tablet {
 			margin-bottom: 0.8889em;
@@ -116,8 +118,8 @@
 		}
 
 		@include super-big-desktop {
-			width: 713px;
-			aspect-ratio: 713/350;
+			width: 715px;
+			aspect-ratio: 715/252;
 		}
 
 		& img {

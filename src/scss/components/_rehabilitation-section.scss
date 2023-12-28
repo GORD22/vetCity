@@ -90,6 +90,7 @@
 
 	&__content {
 		padding: 0 2.5rem;
+    border-radius: 25px;
 
 		display: flex;
 		flex-direction: column;
@@ -158,6 +159,10 @@
 
 		border-radius: 2.5rem;
 		border: 1px solid #025bff;
+    @media (max-width: 1016px) {
+      border: none;
+      padding: 0;
+    }
 
 		@include tablet {
 			border-radius: 0;
