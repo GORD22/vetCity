@@ -4,6 +4,7 @@ import { enableScroll } from '../functions/enable-scroll'
 (function () {
   const btnOpen = document.querySelectorAll('.review-slide__read-all')
   const btnClose = document.querySelector('.review-modal .rec-modal__btn-close')
+
   const overlay = document.querySelector('.review-modal__overlay')
   const modal = document.querySelector('.modal-wrapper_review-modal')
 

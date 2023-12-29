@@ -10,12 +10,14 @@
 			transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 207, 0, 1);
 		"
   >
-  <div class="cardiology_doctors-section_swiper-next btn-next">
-    <img class="next-arrow" src="img/cardiology_doctors-section_swiper-next-arrow.png" alt="">
-  </div>
-  <div class="cardiology_doctors-section_swiper-prev btn-prev">
-    <img class="next-arrow" src="img/cardiology_doctors-section_swiper-next-arrow.png" alt="">
-  </div>
+  <div class="survery_swiper-btns-block">
+    <button class="btn-reset_new btn-prev prev-arrow">
+        <img src="img/svg/arrow-swiper.svg" alt="arrow">
+    </button>
+    <button class="btn-reset_new btn-next next-arrow">
+        <img src="img/svg/arrow-swiper.svg" alt="arrow">
+    </button>
+</div>
     <div class="swiper-wrapper">
       <div class="swiper-slide card-doc_new surgery_card-doc_new cardiology">
         <img src="img/cardilogy_doc-1.png" alt=""/>
@@ -213,9 +215,7 @@
         action=""
         class="docs-contact-block__form surgery_docs-contact-block__form"
       >
-        <label class="custom-checkbox cardiology-checkbox-block">
-          <input type="checkbox" class="custom-checkbox__field">
-          <span class="checkmark"></span>
+        <label style="padding-left: 0;" class="custom-checkbox cardiology-checkbox-block">
           <span class="custom-checkbox__content docs-contact-block__confidentiality">
             Отправляя форму, вы соглашаетесь c
             <a href="ссылка на ПД" class="a">условиями обработки персональных данных</a>

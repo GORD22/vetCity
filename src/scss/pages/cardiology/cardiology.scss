@@ -138,7 +138,7 @@
 .how-performed-section__swiper_cardiology {
   border-radius: 2.5rem;
   width: 700px;
-  height: 432px;
+  height: 100%;
   aspect-ratio: 700/372;
 
   img {
@@ -269,10 +269,13 @@
   width: 100%;
   min-width: auto;
   max-width: 600px;
+  font-family: Inter;
+  font-size: 26px;
   font-weight: 600;
-  font-size: 36px;
   line-height: 30px;
-  letter-spacing: -0.52px;
+  letter-spacing: -0.02em;
+  text-align: left;
+
 }
 
 @media (min-width: (768px)) {
@@ -434,8 +437,7 @@
 }
 
 .diagnostics-section__info.cardiology.big {
-  .preoperative-section__item,
-  .how-performed-section__gray-block-text {
+  .preoperative-section__item{
     font-size: 14px;
     line-height: 20px;
     max-width: 585px;
@@ -552,10 +554,13 @@
   }
 }
 .rehabilitation-section__cardiology{
-  background-image: url(../img/cardoligy_rehabilitation-section-2.png);
+  background-image: url(../img/cardoligy_rehabilitation-section-background.png);
   padding: 25px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  @media (max-width: 1016px) {
+    background-image: url(../img/cardoligy_rehabilitation-section-background_mobile.png);
+  }
 }
 
 // .preoperative-section__item::before {
