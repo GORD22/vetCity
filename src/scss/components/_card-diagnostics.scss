@@ -52,7 +52,7 @@
 
   &__text {
     margin: 0;
-    margin-bottom: 4.6rem;
+    margin-bottom: 1.9286em;
 
     font-weight: 400;
     color: var(--dark-color);
@@ -73,7 +73,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 9px 0;
   }
 
   &__price {
@@ -208,7 +207,7 @@
 
   @include super-big-desktop {
     max-width: 346px;
-    aspect-ratio: 346/224;
+    aspect-ratio: 346/233;
   }
 
   .card-diagnostics__title {

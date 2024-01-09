@@ -1,4 +1,4 @@
-import {inputMaskCreator} from "../_functions"
+import { inputMaskCreator } from "../_functions"
 
 (function () {
   const tel = document.querySelectorAll('.docs-contact-block__form #tel')
@@ -45,30 +45,14 @@ import {inputMaskCreator} from "../_functions"
     })
 
     submit[i]?.addEventListener('click', (e) => {
-      if (!tel[i].value || tel[i].value.length < 11 || tel[i].value.indexOf('_') > -1) {
+      if (!tel[i].value || tel[i].value.length < 11 ||
+        tel[i].value.indexOf('_') > -1) {
       } else {
-        const checkbox = submit[i].parentNode.parentNode.firstElementChild.firstElementChild
-
-        if (checkbox) {
-          if (checkbox.checked) {
-            filedWrapper[i]?.classList.add('hidden-with-animate-opac')
-            console.log(checkbox[i]?.parentNode)
-            checkbox.parentNode.classList.add('hidden-with-animate-opac')
-            successText[i]?.classList.add('show-with-animate-opac')
-            setTimeout(() => {
-              successText[i]?.classList.add('dislay-visible')
-            }, 470)
-          } else {
-            checkbox.parentNode.classList.add("error")
-          }
-        } else {
-          filedWrapper[i]?.classList.add('hidden-with-animate-opac')
-          checkbox.parentNode.classList.add('hidden-with-animate-opac')
-          successText[i]?.classList.add('show-with-animate-opac')
-          setTimeout(() => {
-            successText[i]?.classList.add('dislay-visible')
-          }, 470)
-        }
+        filedWrapper[i]?.classList.add('hidden-with-animate-opac')
+        successText[i]?.classList.add('show-with-animate-opac')
+        setTimeout(() => {
+          successText[i]?.classList.add('dislay-visible')
+        }, 470)
       }
     })
 

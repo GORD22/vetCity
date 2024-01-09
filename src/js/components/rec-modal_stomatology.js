@@ -79,8 +79,8 @@ import { enableScroll } from "../functions/enable-scroll"
       }
     }
   })
-  , c.style = `max-height: ${c.offsetHeight}px; height: 100%;`
-  placeholder?.addEventListener('click', () => {2437
+
+  placeholder?.addEventListener('click', () => {
     tel.focus()
   })
 

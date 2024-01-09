@@ -24,19 +24,17 @@
   }
 
   @include super-big-desktop {
-    max-width: 346.5px;
+    max-width: 347.5px;
   }
 
   &__title {
     margin: 0;
 
-    font-family: Inter;
-    font-size: 26px;
+    font-size: 2.2rem;
     font-weight: 600;
-    line-height: 30px;
-    letter-spacing: -0.02em;
-    text-align: left;
-
+    line-height: 1.1818em;
+    letter-spacing: -0.0091em;
+    color: var(--dark-color);
 
     @include tablet {
       min-height: 2.1538em;

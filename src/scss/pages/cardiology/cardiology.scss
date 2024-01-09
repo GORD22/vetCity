@@ -23,11 +23,10 @@
   justify-content: space-between;
   border: 1px solid #025bff;
   border-radius: 2.5rem;
-  padding: 2rem 2rem;
+  padding: 1.5rem 2rem;
   width: 100%;
   height: 390px;
   max-width: 29rem;
-  min-width: 315px;
   box-sizing: border-box;
 
   @media (max-width: 1016px) {
@@ -55,13 +54,9 @@
 @media (min-width: 1016px) {
   .cardiology .card-diagnostics__title {
     margin-bottom: 12px;
-    font-family: Inter;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 22px;
-    letter-spacing: -0.01em;
-    text-align: left;
-
+    font-size: 1.625rem;
+    line-height: 1.2308em;
+    letter-spacing: -0.0192em;
   }
 }
 
@@ -123,7 +118,7 @@
         max-width: max-content;
       }
     }
-    .preoperative-section__item::marker{
+    .preoperative-section__item::marker {
       color: #0142ff;
     }
   }
@@ -136,9 +131,9 @@
 }
 
 .how-performed-section__swiper_cardiology {
-  border-radius: 2.5rem;
+  border-radius: 0 2.5rem 2.5rem 0;
   width: 700px;
-  height: 100%;
+  height: 372px;
   aspect-ratio: 700/372;
 
   img {
@@ -149,7 +144,7 @@
 
 @media (max-width: 768px) {
   .how-performed-section__swiper_cardiology {
-    border-radius: 2.5rem 2.5rem 0 0;
+    border-radius: 2.5rem 2.5rem 2.5rem 0;
     width: 100%;
     height: 400px;
     aspect-ratio: 700/400;
@@ -205,10 +200,6 @@
 
       button {
         width: 100%;
-        display: block;
-        @media (max-width: 1016px) {
-            display: none;
-        }
       }
     }
   }
@@ -269,18 +260,15 @@
   width: 100%;
   min-width: auto;
   max-width: 600px;
-  font-family: Inter;
-  font-size: 26px;
   font-weight: 600;
+  font-size: 26px;
   line-height: 30px;
-  letter-spacing: -0.02em;
-  text-align: left;
-
+  letter-spacing: -0.52px;
 }
 
 @media (min-width: (768px)) {
   .title-section-cardiology {
-    font-size: 36px;
+    font-size: 26px;
     line-height: 111.111%;
     letter-spacing: -1.08px;
   }
@@ -333,7 +321,6 @@
 
   .diagnostics-section__info-title {
     margin-bottom: 24px;
-    margin-top: 40px;
   }
 
   .diagnostics-section__info-text {
@@ -437,33 +424,22 @@
 }
 
 .diagnostics-section__info.cardiology.big {
-  .preoperative-section__item{
+  .preoperative-section__item,
+  .how-performed-section__gray-block-text {
     font-size: 14px;
     line-height: 20px;
-    max-width: 585px;
   }
 }
-.diagnostics-section__img-wrapper_mobile.cardio-image{
+.diagnostics-section__img-wrapper_mobile.cardio-image {
   display: none;
   @media (max-width: 1016px) {
     display: flex;
     height: 450px;
-    border-radius: 40px;
-    overflow: hidden;
   }
 }
 
 .diagnostics-section__swiper.cardiology {
   padding: 0;
-}
-.diagnostics_section-btn{
-  display: none;
-  @media (max-width: 1016px) {
-    display: block;
-    width: 100%;
-    order: -1;
-    margin-top: 20px;
-  }
 }
 
 .card-doc_new.cardiology {
@@ -499,28 +475,11 @@
 
   .docs-contact-block__item::before {
     content: "•";
+    color: #0142ff;
   }
 
   .btn-reset_new.docs-small-block__btn {
     width: 100%;
-  }
-}
-.card-doc_new .cardiology_docs-section_heart{
-  display: none;
-  @media (max-width: 1016px) {
-    display: block;
-    width: 27.5px;
-    height: 22px;
-    position: relative;
-    bottom: -12px;
-    left: 15px;
-
-  }
-}
-.price-close{
-  display: block;
-  @media (max-width: 1016px) {
-    display: none;
   }
 }
 
@@ -553,15 +512,6 @@
     background-repeat: no-repeat;
   }
 }
-.rehabilitation-section__cardiology{
-  background-image: url(../img/cardiology_rehabilitation-section-background.png);
-  padding: 25px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  @media (max-width: 1016px) {
-    background-image: url(../img/cardiology_rehabilitation-section-background_mobile.png);
-  }
-}
 
 // .preoperative-section__item::before {
 //   content: "";
@@ -580,19 +530,14 @@
 .rehabilitation-section__title.cardiology {
   width: 100%;
   max-width: 100%;
-  @media (max-width: 1016px) {
-    margin-top: 30px;
-  }
 }
 
 .swiper.cardiology-reviews-section__swiper {
   @media (max-width: 1016px) {
     padding: 0;
   }
-
-
 }
-.doctors-section_swiper-arrows{
+.doctors-section_swiper-arrows {
   display: flex;
   justify-content: space-between;
   margin: 3.5em 3em 1.5em;
@@ -600,43 +545,32 @@
     display: none;
   }
 }
-.services-section__header-img-wrapper{
+.services-section__header-img-wrapper {
   @media (max-width: 1016px) {
     height: 400px;
   }
 }
-.services-section__header-img-wrapper .cardiology_services-section_img {
-  @media (max-width: 1016px) {
-    display: none;
-  }
-}
-.services-section__header-img-wrapper .cardiology_services-section_img_mobile{
+.cardiology_how-perfomed_header {
   display: none;
   @media (max-width: 1016px) {
     display: block;
   }
 }
-.cardiology_how-perfomed_header{
-  display: none;
-  @media (max-width: 1016px) {
-    display: block;
-  }
-}
-.cardiology_doctors-section_swiper-next{
+.cardiology_doctors-section_swiper-next {
   position: absolute;
   right: 0;
   top: 42%;
   z-index: 50;
 
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 120px;
   height: 70px;
   border-radius: 60px 0 0 60px;
   display: flex;
   align-items: center;
   cursor: pointer;
-  img{
+  img {
     margin-left: 37px;
     width: 7px;
     height: 14px;
@@ -645,4 +579,55 @@
   @media (max-width: 1016px) {
     display: none;
   }
+}
+.cardiology_doctors-section_swiper-prev {
+  position: absolute;
+  left: 0;
+  top: 42%;
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  width: 120px;
+  height: 70px;
+  border-radius: 60px 0 0 60px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  img {
+    margin-left: 37px;
+    width: 7px;
+    height: 14px;
+    aspect-ratio: auto;
+  }
+  @media (max-width: 1016px) {
+    display: none;
+  }
+}
+.cardiology_doctors-section_swiper-prev {
+  position: absolute;
+  left: 0;
+  top: 42%;
+  z-index: 50;
+
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  width: 120px;
+  height: 70px;
+  border-radius: 60px 0 0 60px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  img {
+    margin-left: 37px;
+    width: 7px;
+    height: 14px;
+    aspect-ratio: auto;
+  }
+
+  @media (max-width: 1016px) {
+    display: none;
+  }
+}
+.swiper-button-disabled {
+  display: none;
 }

@@ -1,145 +1,142 @@
 .doctors-section {
-	overflow: hidden;
-	padding-left: 0;
-	padding-right: 0;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
 
-	&__section-title {
-		margin: 0 auto;
-		margin-bottom: 4rem;
-    white-space: nowrap;
+  &__section-title {
+    margin: 0 auto;
+    margin-bottom: 2rem;
 
-		// max-width: 11.5909em;
+    max-width: 11.5909em;
 
-		@include tablet {
-			margin: 0;
-			margin-bottom: 2.154em;
+    @include tablet {
+      margin: 0;
+      margin-bottom: 2.154em;
 
-			max-width: unset;
-		}
-	}
-
-  @media (max-width: 1016px) {
-    .doctors-section__section-title {
-      font-family: Inter;
-      font-size: 18px;
-      font-weight: 600;
-      line-height: 22px;
-      letter-spacing: -0.01em;
-      text-align: center;
+      max-width: unset;
     }
-}
+  }
 
-	&__doctors-swiper {
-		width: 100%;
+  &__doctors-swiper {
+    width: 100%;
 
-		padding: 0 2.5rem;
+    padding: 0 2.5rem;
 
-		@include tablet {
-			padding-right: 2.9375rem;
-			padding-left: 2.9375rem;
-		}
+    @include tablet {
+      padding-right: 2.9375rem;
+      padding-left: 2.9375rem;
+    }
 
-		.swiper-wrapper {
-			@include tablet {
-				gap: 1.375rem;
-			}
-		}
-	}
+    .swiper-wrapper {
+      @include tablet {
+        gap: 1.375rem;
+      }
+    }
+  }
 
-	&__sort-block {
-		display: flex;
-		column-gap: 0.5rem;
-	}
+  &__sort-block {
+    display: flex;
+    column-gap: 0.5rem;
+  }
 
-	&__sort-btn {
-		border-radius: 2.5rem;
-		background-color: #f1f4f8;
+  &__sort-btn {
+    border-radius: 2.5rem;
+    background-color: #f1f4f8;
 
-		padding: 0.5714em 0.8571em;
+    padding: 0.5714em 0.8571em;
 
-		color: #1a1a1a;
-		font-size: 0.875rem;
-		font-weight: 500;
-		line-height: 1.4286em;
+    color: #1a1a1a;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.4286em;
 
-		& span {
-			color: #8d8d8d;
-			font-size: 0.875rem;
-			font-weight: 500;
-			line-height: 1.4286em;
-		}
+    & span {
+      color: #8d8d8d;
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.4286em;
+    }
 
-		&_active {
-			background-color: #0251ff;
-			color: var(--light-color);
+    &_active {
+      background-color: #0251ff;
+      color: var(--light-color);
 
-			& span {
-				color: inherit;
-			}
-		}
-	}
+      & span {
+        color: inherit;
+      }
+    }
+  }
 
-	.docs-small-block {
-		background-color: #0142ff;
-		padding: 4rem 2rem;
+  .docs-small-block {
+    background-color: #0142ff;
+    padding: 4rem 2rem;
 
-		max-width: 29rem;
-		width: 100%;
-		height: auto;
+    max-width: 29rem;
+    width: 100%;
+    height: auto;
 
-		border-radius: 2.8rem;
+    border-radius: 2.8rem;
 
-		display: flex;
-		flex-direction: column;
-		align-items: start;
-		justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
 
-		box-sizing: border-box;
+    box-sizing: border-box;
 
-		&__list {
-			&:before {
-				max-width: 180px;
-			}
-		}
+    &__list {
+      &:before {
+        max-width: 180px;
+      }
+    }
 
-		&__btn {
-			padding: 1.3333em 2.0833em;
-			border-radius: 5em;
-			background: var(--light-color);
+    &__btn {
+      padding: 1.3333em 2.0833em;
+      border-radius: 5em;
+      background: var(--light-color);
 
-			font-size: 1.2rem;
-			font-weight: 600;
-			line-height: 1.5em;
-			letter-spacing: 0.0167em;
-			text-transform: uppercase;
-			color: var(--dark-color);
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.5em;
+      letter-spacing: 0.0167em;
+      text-transform: uppercase;
+      color: var(--dark-color);
 
       &_stomatology {
         width: 100%;
+        padding: 1.3333em 2.0833em;
+        border-radius: 5em;
+        background: var(--light-color);
+        font-size: 1.2rem;
+        font-weight: 600;
+        line-height: 1.5em;
+        letter-spacing: 0.0167em;
+        color: var(--dark-color);
+        text-transform: uppercase;
+        display: block;
       }
-		}
+    }
 
-		@include tablet {
-			display: none;
-		}
-
-	}
+    @include tablet {
+      display: none;
+    }
+  }
 }
 
 .survery_swiper-btns-block {
-	margin-bottom: 22px;
+  margin-bottom: 22px;
 
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .stomatology_swiper-btns-block {
-	margin-bottom: 22px;
+  margin-bottom: 22px;
 
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   @include for-desktop {
     display: none;
@@ -148,49 +145,49 @@
 
 .btn-next,
 .btn-prev {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 
-	& img {
-		max-width: 49px;
-		width: 100%;
-		height: 20px;
-		aspect-ratio: 49/20;
-	}
+  & img {
+    max-width: 49px;
+    width: 100%;
+    height: 20px;
+    aspect-ratio: 49/20;
+  }
 
-	& .swiper-button-disabled {
-		visibility: hidden;
-	}
+  & .swiper-button-disabled {
+    visibility: hidden;
+  }
 }
 
 .btn-prev {
-	display: none;
-	transform: rotate(180deg);
+  display: none;
+  transform: rotate(180deg);
 
-	@include tablet {
-		display: inline-block;
-	}
+  @include tablet {
+    display: inline-block;
+  }
 }
 
 .survery_doctors-swiper {
-	@include tablet {
-		padding-bottom: 2.5rem;
-	}
+  @include tablet {
+    padding-bottom: 2.5rem;
+  }
 
-	.swiper-wrapper {
-		gap: 0;
+  .swiper-wrapper {
+    gap: 0;
 
-		@include tablet {
-			flex-wrap: nowrap;
-			justify-content: start;
-		}
-	}
+    @include tablet {
+      flex-wrap: nowrap;
+      justify-content: start;
+    }
+  }
 }
 
 .btn-next {
-	display: none;
+  display: none;
 
-	@include tablet {
-		display: inline-block;
-	}
+  @include tablet {
+    display: inline-block;
+  }
 }

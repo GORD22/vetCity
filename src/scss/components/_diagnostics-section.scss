@@ -6,7 +6,7 @@
         @include tablet {
             display: block;
 
-            margin-bottom: 2.15em;
+            margin-bottom: 2.3077em;
         }
     }
 
@@ -14,7 +14,7 @@
         padding-right: 2.5rem;
         padding-left: 2.5rem;
 
-        margin-bottom: 0;
+        margin-bottom: 5.4rem;
 
         display: flex;
         align-items: start;
@@ -26,7 +26,7 @@
             flex-direction: row;
             gap: 1.25rem;
 
-            margin-bottom: 0;
+            margin-bottom: 3.375rem;
             padding-right: 2.9375rem;
             padding-left: 2.9375rem;
         }
@@ -51,16 +51,12 @@
     &__info-title {
         margin: 0;
         margin-bottom: 0.9231em;
-        margin-top: 0;
 
         font-size: 2.6rem;
         font-weight: 600;
         line-height: 1.2308em;
         letter-spacing: -0.0192em;
         color: var(--dark-color);
-        @media (max-width: 1016px) {
-          margin-top: 40px;
-        }
 
         @include tablet {
             margin-bottom: 0.8889em;
@@ -74,10 +70,9 @@
     &__info-text {
         margin: 0;
         margin-bottom: 2.8571em;
-        max-width: 585px;
 
         &:not(:last-of-type) {
-            margin-bottom: 1.1em;
+            margin-bottom: 1.4286em;
         }
 
         font-weight: 400;
@@ -143,9 +138,8 @@
         }
 
         @include super-big-desktop {
-            max-width: 700px;
-            aspect-ratio: 700/671;
-            max-height: 671px;
+            max-width: 44.5625rem;
+            aspect-ratio: 713/585;
         }
 
         & img {
@@ -156,11 +150,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
 
-            max-width: 100%;
+            max-width: unset;
             height: 100%;
-            @media (max-width: 1016px) {
-              display: none;
-            }
         }
     }
 
